@@ -216,14 +216,14 @@ If the challenging card has a brawl class genetic of A (Ace), the strongest of a
 
 | **Essence \ Target** | Earth | Water | Fire | Wind | Light | Darkness | Moon | Nature |
 |----------------------|-------|-------|------|------|-------|----------|------|--------|
-| **Earth**            | Normal| Normal| Double| Half | Normal| Normal   | Normal| Normal |
-| **Water**            | Normal| Normal| Half | Double   | Normal| Normal   | Normal| Double     |
-| **Fire**             | Half  | Double    | Normal| Normal| Normal| Normal   | Normal| Double    |
-| **Wind**             | Double    | Half  | Normal| Normal| Normal| Normal   | Normal| Normal|
-| **Light**            | Normal| Normal| Normal| Normal| Half  | Double       | Normal| Normal|
-| **Darkness**         | Normal| Normal| Normal| Normal| Double    | Half     | Normal| Normal|
+| **Earth**            | Normal| Normal| Strong| Weak | Normal| Normal   | Normal| Normal |
+| **Water**            | Normal| Normal| Weak | Strong   | Normal| Normal   | Normal| Strong     |
+| **Fire**             | Weak  | Strong    | Normal| Normal| Normal| Normal   | Normal| Strong    |
+| **Wind**             | Strong    | Weak  | Normal| Normal| Normal| Normal   | Normal| Normal|
+| **Light**            | Normal| Normal| Normal| Normal| Weak  | Strong       | Normal| Normal|
+| **Darkness**         | Normal| Normal| Normal| Normal| Strong    | Weak     | Normal| Normal|
 | **Moon**             | Normal| Normal| Normal| Normal| Normal| Normal   | Normal| Normal|
-| **Nature**           | Normal| Half  | Normal| Double| Half| Normal   | Normal| Normal|
+| **Nature**           | Normal| Weak  | Normal| Strong| Weak| Normal   | Normal| Normal|
 
 ## Resource list
 
