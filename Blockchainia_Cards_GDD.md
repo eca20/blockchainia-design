@@ -487,12 +487,21 @@ Yet, while most NPCs view these invaders as a threat, others have found opportun
 4. Launch - 15 months
 
 ### Marketing Strategy
-- Teasers and Reveals via Social Media, Q&A, Live Streams via Twitch, Youtube, TikTok
-- Partnerships with popular streamers and influencers
-- Early Access for feedback and hype building
+- Series of verticle slice trailers showing spoofs of the OpenWorld and CryptoBrawl games
+   - Reveal Brand/Narrative and Mechanics as close to gameplay as possible
+   - Key interactions:
+     - Combat
+     - Crafting and Economics
+     - Game Interoperabiity
+     - Lore/Backstory
+   - Frequent releases that communicate to audience the benefits of Early Access to drive Follows and Signups through unique rewards. 
+- Promote the CardBrawl as a Companion Application
+  - Reveals, Live Streams, and Q&A via Social Media
+  - Early Access for feedback and hype building
+
+- Layer Teaser Trailers with popular streamers and influencers to create better brand recognition and recall
 - Launch Event
-- Work with charitable organizations that allow players to complete specific game contracts and earn tokens paid to the charity of their choice
-- Work with past and popular gaming brands and sports drinks to offer giveaways
+- Recruit charitable organizations that allow players to complete specific game contracts and earn tokens paid to the charity of their choice
 
 ## Conclusion
 
