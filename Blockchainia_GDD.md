@@ -1,12 +1,12 @@
-# Game Design Document (GDD) for "Blockchainia: CryptoBrawl"
+# Game Design Document (GDD) for "Blockchainia: CryptoRoyale"
 
 ## 1. Game Overview
 
 ### Title
-Blockchainia: CryptoBrawl
+Blockchainia: CryptoRoyale
 
 ### Concept
-Blockchainia: CryptoBrawl is a first-person shooter (FPS) where players use both magically and technologically enhanced weapons  to compete against each other and AI enemies. Players can invest an entry fee ("ante-up") to join matches, with performance-based returns in game currency and various raw "materials" and magical "essence". The unique feature of the game lies in its combination of magic and technology, where players collect resources to craft spells and weapons, and breed magical pets to assist them in combat. Forging together any combination of these results in more powerful weapons and pets with unique abilities. Game play will feature fast, fun, and repeatable mechanics that consistently provides new incentives for player interactions to fuel a robust in-game economy. 
+Blockchainia: CryptoRoyale is a first-person shooter (FPS) where players use both magically and technologically enhanced weapons  to compete against each other and AI enemies. Players can invest an entry fee ("ante-up") to join matches, with performance-based returns in game currency and various raw "materials" and magical "essence". The unique feature of the game lies in its combination of magic and technology, where players collect resources to craft spells and weapons, and breed magical pets to assist them in combat. Forging together any combination of these results in more powerful weapons and pets with unique abilities. Game play will feature fast, fun, and repeatable mechanics that consistently provides new incentives for player interactions to fuel a robust in-game economy. 
 
 ### Platform
 PC/Mobile, Ported to VR after successful launch.
@@ -161,7 +161,7 @@ First-person Shooter, RPG Elements
 
 ### Modes
 - **Blockchainia: OpenWorld RPG:** Narrative-driven missions with rich backstory on the world and its resources.
-- **Blockchainia: CryptoBrawl: Arena PvPvE:** Player vs. player vs. AI combat with ante-up and on-chain rewards, including contracts allowing squads to work together to complete high-stakes missions against AI opponents.
+- **Blockchainia: CryptoRoyale: Arena PvPvE:** Player vs. player vs. AI combat with ante-up and on-chain rewards, including contracts allowing squads to work together to complete high-stakes missions against AI opponents.
 - **Off-Chain:** Private lobbies for free-play and practice, and custom configurations.
 - **Configurations:** Game servers are privately run by individuals, governed through a DAO. Influences and streamers will be encouraged to become Server Owners and grow their own player communities. Operating as game-jockeys, they will lead player guilds towards greater influence in the future of Blockchainia's web3 interoperability, while experimenting with custom configurations to create new, fun, and exciting game play experiences.
 
@@ -171,13 +171,11 @@ First-person Shooter, RPG Elements
 The game is set in a virtual on-chain realm where the separation of magic and technology has been obfuscated from the public by a shadowy organization. Ancient ruins and mines scatter the landscape, providing rich sources of elemental essence and raw materials. NPC characters inhabit the land, and have littered it with monuments, fountains, as well as various spiritual relics and artifacts revealing a deep but unspoken culture. Their interactions give clues to the history of this strange world, revealed through easter eggs holding the secrets of the beginning of this unique realm, ultimately leading each player on a unique journey to understand the prophecy behind the NPC's very existence.
 
 ### Narrative
-The realm of Blockchainia exists outside of the concept of time itself, a plane where games of past, present, and future are slowly being connected by an unknown force. This force initially takes the form of a seemingly out-of-place Sword that flies through the sky near the end of a match. Wielding the Sword allows the final player standing to destroy in-game world elements for top-tier rewards. Extracting the Sword will enable early players to earn early rewards as we approach a full release. 
+The realm of Blockchainia exists outside of the concept of time itself, a plane where games of past, present, and future are slowly being connected by an unknown force.  
 
-The initial game will resemble a simple first person shooter, where magical essence and raw materials can be collected and extracted. A sword will spawn in the final moments of a match, allowing the final player to roam free and collect spoils while the remainder of the players re-equip and re-join. New features will be added over time through Snapshot releases, allowing players and stakeholders to give feedback through our Discord server. 
+Players will become members of various guilds vying for control over resources and power in a virtual world fractured by misinformation. Each player's actions and alliances will influence the eventual storyline and available craftables, collectibles, and mechanics as they evolve through each season of game play.
 
-Players are members of various guilds vying for control over resources and power in a world fractured by misinformation. Each player's actions and alliances will influence the eventual storyline and available resources, as well as the complexity of the various magic and technologies that evolve through each season of game play.
-
-It is initially unknown to the player, but the NPC's despise the powerful invaders that enter through yet-unknown virtual means. From the NPC's views, players play a brutal game for sport, annihilating each other while pillaging their sacred land and destroying their culture, history, and home in the process, while also forcing their leaders to create every more powerful weapons and magic. They yearn for a savior, one who will provide the governance necessary to banish these barbarians from the realm of Blockchainia forever.
+It is initially unknown to the player, but the NPC's despise the powerful invaders that enter through yet-unknown virtual means. From the NPC's perspective, players start as AI Card Bots, whom one day take the form of robots that take over their world. These robots enjoy playing a brutal sport annihilating each other while pillaging the NPC world in the process, forcing their leaders to create every more powerful technology and magic. They yearn for a savior, one who will provide the governance necessary to banish these barbarians from the realm of Blockchainia forever.
 
 Yet, while most NPCs view these invaders as a threat, others have found opportunity, offering "smart contracts" to players for completing certain tasks and rewarding them heavily for their efforts. 
 
@@ -224,4 +222,4 @@ A mix of dark gritty mines beneath a vibrant over-world, each environment brough
 
 ## Conclusion
 
-Blockchainia: CryptoBrawl combines dynamic FPS game play with deep RPG crafting and pet management, set in a unique world where magic meets technology. The game is designed to attract both casual and hardcore gamers with its innovative mechanics and rewarding game play loop.
+Blockchainia: CryptoRoyale combines dynamic FPS game play with deep RPG crafting and pet management, set in a unique world where magic meets technology. The game is designed to attract both casual and hardcore gamers with its innovative mechanics and rewarding game play loop.

@@ -6,9 +6,9 @@
 Blockchainia: CardBrawl
 
 ### Concept
-Blockchainia: CardBrawl is a fully on chain game in which Cards are minted for a complex Collect, Craft, and Compete Card game. Each card features a different Monster, Boss, NPC or Playable Character from the Blockchainia Lore. Blockchainia: CardBrawl is a mini-game to our wider gaming ecosystem. The game mixes and adapts from the mechanics of many  well known games, from the capturing based on score (Dominoes, Triple Triad, Final Fantasy 8), to complex battles (Magic the Gathering, Tetra Master, Final Fantasy 9). We implement a combination of Rank (Face Values), Genetics, and Battle Classes to create a strategic hybrid-deterministic battle system. CardBrawl players compete with their genetically unique Cards to collect Resources with allow players to alter their Cards attributes and genetics, as wlel as Forge new Weapons and Armor to each card. Legendary and Mythical Weapons and Armor will grant specific Perks in the battle mathematics.
+Blockchainia: CardBrawl is a fully on chain game in which Cards are minted for a complex Collect, Craft, and Compete Card game. Each card features a different Monster, Boss, NPC or Playable Character from the Blockchainia Lore. Blockchainia: CardBrawl is a mini-game to our wider gaming ecosystem. The game mixes and adapts from the mechanics of many well known games, from simple capturing based on value (Dominoes, Triple Triad, Final Fantasy 8), to complex battles (Magic the Gathering, Tetra Master, Final Fantasy 9). We implement a combination of Rank (Face Values), Genetics, Battle Arrows, and Battle Classes to create a strategic hybrid-deterministic battle system. CardBrawl players compete with their genetically unique Cards to collect Resources and earn Experience. Resources allow players to alter their Card's attributes, as well as Forge new Equipment to each card. Experience allows players to level their cards, potentially increasing certain attributes along the way. Legendary and Mythical Weapons and Armor will grant specific Perks in the battle mathematics.
 
- Players can invest an entry fee, or "Ante-up", to join matches against NPCs of varying difficulty or their friends. The Ante-up system will allow players to play without needing to have minted cards ahead of time. The winner is allowed to "Clone" one perishable copy of a card they have captured from their opponents hand. The game will feature returns in the form of Resources: Ingredients, Materials, and magical Essences, which must be obtained through playing AI NPCs. Crafting together Formulas of these Resources results in more powerful equipment and spells which can be Forged to cards to increase its "Face Values" and "Genetics".  
+Players can invest an entry fee, or "Ante-up", to join matches against NPCs of varying difficulty or their friends. The Ante-up system will allow players to play without needing to have minted cards ahead of time. The winner is allowed to "Clone" one perishable copy of a card they have captured from their opponents hand. This Clone will be automatically burned after the completion of the first match it participates in. The game's returns are the following Resources: Ingredients, Materials, and magical Essence, which must be obtained through playing AI NPCs. Crafting together Formulas of these Resources results in more powerful equipment and spells which can be Forged to cards to increase its "Face Values" and genetic attributes.  
 
 ### Platform
 PC/Mobile
@@ -19,53 +19,68 @@ Card Game
 ## 2. Gameplay
 
 ### Game Overview
-Blockchainia: Cards is a card game that combines crafting with a complex battle system. Players compete against AI NPCs to mine Resources to enhance their genetically unique cards, driving players to level up to enable higher stakes games. Players Ante-Up a small fee to play against AI NPCs, all of which drop valuable Resources needed to engage with the crafting system. Cards can be acquired through minting Card Packs, while ingredients, materials, and essence must be won through playing Card games through the ante-up system. 
+Blockchainia: CardBrawl combines resource collection and crafting with a complex battle system. Players compete against AI NPCs to mine Resources to enhance their genetically unique cards, driving players to level up to enable higher stakes games. Players Ante-up a small fee to play against AI NPCs who drop valuable Resources upon losing. These resources are needed to engage with the crafting system. Cards can be acquired through minting Card Packs, while Resources in the form of Ingredients, Materials, and Essence must be won through playing Card games through the Ante-up system. 
 
-Blockchainia: CryptoCards is played on a three-by-three (3x3) square grid of blank spaces where cards will be placed as the game progresses. Each card has four numbers, one in each Cardinal Direction, representing its strength in that direction. These numbers range from one to ten, ten being represented by the letter 'A'. These numbers are called "Face Values". Cards can have elemental alignments that affect the game play if there are elemental icons on the game board (i.e., the Elemental Rule is in effect).
+CardBrawl is played on a four-by-four (4x4) four grid of blank squares where cards will be placed as the game progresses. At the start of each game, up to six squares may be blocked from play, referred to as Grid Lock. Each card has four numbers, one in each Cardinal Direction, referred to as "Face Values". Each individual number is referred to as a Rank, representing its strength in that direction. These numbers range from one to ten, ten being represented by the letter 'A'. Cards can have elemental alignments that affect the game play if there are elemental icons on the game board. 
 
-In a basic game each player has five cards. A coin-flip decides who begins. The player who wins the coin toss may choose a card to play anywhere on the grid. After the first card is played, the opposing player may play a card on any unoccupied space on the board. The game continues with players' turns alternating.
+Before a match, each player selects five Cards from their Deck. A coin-flip decides who begins. The player who wins the coin toss may choose a card to play anywhere on the grid. After the first card is played, the opposing player may play a card on any unoccupied square on the board. The game continues with players' turns alternating.
 
-To win, a majority of the total ten cards played (including the one card that is not placed on the board) must be of the player's card color. To do this, the player must capture cards by placing a card (referred to as the "Active" card) adjacent to an opponent's card (referred to as the "Resting" card) whereupon the 'Face Values' of the sides where the two cards touch will be compared in what is referred to as a "Face Off". If the Face Value of the Resting card is higher than the Active card's, the Active card will be captured and turned into the opponent's color. If the Active card's Face Value is higher, the Resting card will be captured and changed into the player's color instead. Capturing can only occur during that player's turn, and no other opponent card can capture a card during said turn. That is to say, there is only one "Face Off" per turn. 
+To win, a majority of the total ten cards played (including up to one card that is not placed on the board if 6 blocks are Grid Locked) must be of the player's card color. To do this, the player must capture cards by placing a card (referred to as the "Active" card) adjacent to an opponent's card (referred to as the "Resting" card) whereupon the the player placing the active card can choose whether to "Face Off" with one of the opponents cards using their "Face Value" Ranks in a cardinal direction, or challenge a card in any of the ordinal directions to a Card Brawl.
 
-A scenario where an Active card is placed adjacent to two or more opponent Resting cards, and the attacking card does not win a "Face Off" in any direction, but the adjacent cards have the same values facing each other, a resulting "Card Brawl" takes place. The Brawl Direction is selected by the player placing the attacking card. The winner of the brawl will take all cards adjacent to the Active card in directions in which the Active Card's face values are higher than its adjacent opponent's Resting Cards. If the Active card shares values with Resting cards in multiple directions, multiple card brawls may take place towards the final outcome, until all potential cards have been captured. The player placing the attacking card chooses the initial direction to take, and continues until all Brawls have completed. In this scenario, cards may be captured and lost multiple times before the final outcome of the turn is reached. 
+During a Face Off the Ranks of the Active and Resting card(s) are compared. If the Resting Card's Rank is resolved to be higher than the Active card's, the Active card will be captured and turned into the opponent's color. If the Active card's Face Value is higher, the Resting card will be captured and changed into the player's color instead. Capturing a Card via Face Off can only occur during that player's turn, and no other opponent card can capture a card during said turn. That is to say, there is only one Face Off per turn. If a grid square contains an elemental marker, the card placed on it may rise or lower in Rank by 1. 
+
+When a player places a card adjacent to an opponents card in a ordinal direction, and the Active card contains a Brawl Arrow in that direction, the player may choose to challenge the Resting card in a Card Brawl. The Brawl Direction is selected by the player placing the Active card. If the Active card contains Brawl Arrows facing the Resting cards in multiple directions, and the player chooses to Card Brawl, multiple Card Brawls will take place towards the final outcome, until all potential cards have been captured. The player placing the Active card chooses the initial direction to take, and continues until all Brawls have completed. In this scenario, cards may be captured and lost multiple times before the final outcome of the turn is reached. 
 
 Cards have different levels. Common level cards have low Face Values, like 1's and 2's and 3's, while Epic and Legendary level cards have 8's, 9's, and A's. Some cards are considered "Mythical". Mythical cards have unique perks derived from their Forged Weapon and Armor. 
 
 ### Game Setup
-1. **Card Ranks and Genetics:** As stated, Cards have four Ranks, one in each Cardinal direction, as well as unique genetics that are used in the Brawl Mathematics through each Genetic attributes value. The cards also feature 0 through 4 arrows, one possible in each of the four ordinal directions. A Card's Ranks and Genetics can be enhanced via Forging Equipment and Magic to the card. 
+1. **Face Values:** Each card has four numbers, one in each Cardinal Direction, representing its strength in that direction. Each number is referred to as a Rank, evaluated as a Value from one to ten, ten being represented by the letter 'A'.
 
+1. **Genetics:** Each card contains unique Genetics that derive it's initial Face Values, Brawl Arrows, Attributes, and Elemental compatibility. These genetics play a crucial role in the Brawl Mathematics through each Genetic attribute's value, such as setting the Card's Brawl Class and Power attribute. 
+
+1. **Adeptness:** Each card contains a genetic elemental compatibility. The adeptness attribute for each element can be increased through placing the card on an grid square containing an elemental symbol during a match. Greater adeptness increases the base compatibility for each element.
+
+1. **Card Ranks:** Cards have four Ranks which comprise it's Face Values, one in each Cardinal direction. 
+
+1. **Brawl Arrows:** Each Card contains up to four arrows, one possible in each of the four ordinal directions. Cards may start a Card Brawl when one of the Brawl Arrows faces an adjacent opponents card. 
+
+1. **Forging:** A Card's Ranks are be altered via Forging Equipment and Magic to the card. It is not guaranteed that the ranks on a card will increase when Forging. However, some of a cards attributes may be increased by increasing the Level the card. 
+
+1. **Card Levels:** As are used in Brawls, they earn experience towards its Level. Levels range from 1-100. As a card levels, its Brawl Class may change naturally or through evolution. While Leveling, a cards Power statistic will increase at certain levels. 
 
 1. **Deck Construction:** Players construct a deck of cards from cards they own, or may borrow up to 5 cards, Common through Rare, from a pool of cards made available for each game. The cost of borrowing cards is included in the "ante-up" fee. Players are unable to keep their borrowed cards, although their Opponent may Clone any of the captured borrowed Cards upon winning a match. 
+
+1. **Deck Limiting:** Players may only hold 10 instances of a Card for each unique monster, pet, character, or boss per Wallet. This total includes Cloned cards. If there is no room left in a player's wallet for a Cloned card, they must first burn one card of that instance in their deck to collect it. A Wallet Manager will allow the storing of multiple Wallets, akin to a "save file". Players are free to trade their cards to other Wallets through over-the-counter transactions.
   
-2. **Game Board:** Blockchainia: Cards is played on a 3x3 grid board. Each square on the grid can hold one card. 
+1. **Game Board:** Blockchainia: Cards is played on a 4x4 grid board. Each square on the grid can hold one card. 
 
-5. **Face Values:** Each card has four numbers, one in each Cardinal Direction, representing its strength in that direction. These numbers range from one to ten, ten being represented by the letter 'A'.
+1. **Grid Lock:** As a game starts, up to six squares may be blocked off, which prevents either player from placing a card on that board square.  
 
-6. **Face Off:** The name for a battle in which two adjacent cards Face Values in their shared directions are considered. 
+1. **Face Off:** When two cards are placed adjacent to each other and challenge each other in a cardinal direction, a Face Off ensues. When Cards Face Off, their adjacent Ranks are compared. The Card with the lower Rank will be captured. 
 
-5. **Genetics** Each card has a genetic value that influence which card will win a Card Brawl. The Power, Brawl Class, Physical Defense, and Magical Defense are shown on the face of each card. These values can be increased through properly forging weapons, armor, and accessories to each card. Genetics give each card a unique base attributes and elemental compatibility. 
+1. **Genetics** Each card has a genetic value that influence which card will win a Card Brawl. The Brawl Class, Power, Physical Defense, and Magical Defense are shown on the face of each card. These values can be increased through properly forging weapons, armor, and accessories to each card. Genetics give each card a unique base attributes and elemental compatibility. 
 
-6. **Card Brawls** When two cards are placed adjacent to each other with the same "Face Value", a Card Brawl ensues. The Card Brawl mathematics are described below. A single card placement may result in multiple card brawls. The player who places the card decides which brawl occurs first. 
+1. **Card Brawls** When two cards are placed adjacent to each other and challenge each other in an ordinal direction a Card Brawl ensues. The Card Brawl mathematics are described below. A single card placement may result in multiple card brawls. The player who places the card decides which brawl occurs first. 
 
-8. **Equipment and Spells** The primary objective of the card game is to craft Legendary Equipment. Card types are uncommon, common, rare, epic, and legendary. Only Legendary Equipment can be used to upgrade a Card to Mythical status. Mythical cards can be obtained by Forging Legendary Spells and Equipment to a card. 
+1. **Equipment and Spells** The primary objective of the card game is to craft Legendary Equipment. Card types are uncommon, common, rare, epic, and legendary. Only Legendary Equipment can be used to upgrade a Card to Mythical status. Mythical cards can be obtained by Forging Legendary Spells and Equipment to a card. 
 
-9.  **Collection and Crafting:** The basic resources of the game are ingredients, materials, and elemental essence of magic.  Players create spells and Equipment via the Resources gathered by winning games against AI NPCs. 
+1.  **Collection and Crafting:** The basic resources of the game are ingredients, materials, and elemental essence of magic.  Players create spells and Equipment via the Resources gathered by winning games against AI NPCs. 
     - **Alchemy, Synthesis, and Forging:** Visit the NPC-owned Alchemy and Synthesis shops to craft resources into Spells and Equipment. Equipment can be Forged to a card to alter the cards Face Values and Genetics to upgrade cards to Legendary and Mythical status. 
     - **Card Brawls:** It is possible to increase a cards Brawl Class from P or M to D or A through engaging the card in Card Brawls. 
-    - **Vending:** Visit the Vending Machine to mint new card packs. 
+    - **Vending:** Visit the Vending Machine to mint new card packs and view special deals. 
     - **Elemental Advantage:** Adds strategic depth with elemental bonuses during a Card Brawl.
     - **Perks:** Introduce conditional skill activation for dynamic gameplay. Perks are derived from Legendary and Mythical Weapons
 
-10. **Resource Types:**
+1. **Resource Types:**
     - **Ingredients:** Used to craft and upgrade Equipment and Spells. 
     - **Materials:** Used to craft and upgrade Equipment and Spells.  
     - **Essence:** Used to craft and upgrade Equipment and Spells. 
 
-5. **Starting Hands:** Players draw a starting hand of cards from their deck. If the player does not own enough cards to fill a hand, they can choose up to five basic cards through the "ante up" system, essentially renting the remaining cards needed to start the game.
+1. **Starting Hands:** Players draw a starting hand of cards from their deck. If the player does not own enough cards to fill a hand, they can choose up to five basic cards through the "Ante-Up" system, essentially renting the remaining cards needed to start the game.
 
-6. **Coin Flip:** Each player has five cards, neither knowing the other player's hand. A coin-flip decides which of the two players shall begin.
+1. **Coin Flip:** Each player has five cards, neither knowing the other player's hand. A coin-flip decides which of the two players shall begin.
  
-7. **Cloning Cards** The winner of each match is allowed to Clone one perishable copy of a card of their opponents selected from the pool of cards they captured throughout the match. 
+1. **Cloning Cards** The winner of each match is allowed to Clone one perishable copy of a card of their opponents selected from the pool of cards they captured throughout the match. This card is burned after it participates in a match as an Active card. 
 
 ### A card is played
 
@@ -73,67 +88,64 @@ Once the game is set up, the starting player may play their first card at any un
 
 ### Neutral card play
 
-If a card is placed next to another card, they may interact. Should neither of the cards be placed adjacent in the cardinal directions, there is no interaction. This is a neutral card play.
+If a card is placed next to another card in a cardinal or ordinal direction, they may interact. Should a placement happen where none of the cards are adjacently in the cardinal or ordinal directions there is no interaction. This is a neutral card play.
 
 ### Card capture
 
-A Card Brawl occurs only if the Active and Resting cards possess equal Face Values in their adjacent direction, and the Active Card could not win a Face Off in any direction. A Card captured through comparing Rank as adjacent cards is considered to be captured "on the Face Off."
+An Active card may be used to engage in a Face Off or Card Battle, but not both. The card that loses the Face Off, or any card that loses a Card Battle is Captured. 
 
 #### Card Brawls
 
 ##### Genetic Attributes: 
 
-Every card has four Genetic Attributes. Three are hexadecimal values, and the final is a Brawl Class. An example card may have the Attribute values: P-3-3-3-X-9-2-9-4. Each Genetic Attribute relates to the card's competitive strength. The first value (P in the example) is always an alphabetical value from the set [P,S,D,A], while the next three genetics increase on a hexadecimal range, meaning they can range from 0-9, then through letters A-F.
+Every card has eight genetic attributes. Four are comprised of the face values, which are also the cards elemental strength attributes. Printed on each card are also four Genetic Attributes. The first is a Brawl Class followed by is power, physical defense, and magical defense. An example card may have the Attribute values: P-3-A-0. Each Genetic Attribute relates to the card's competitive strength. The first value (P in the example) is always an alphabetical value from the set [P,S,D,A], while the next three genetics increase on a hexadecimal range, meaning they can range from 0-9, then through letters A-F.
 
-   - The first value is the Brawl Class of the card. 
-   - The second value is for the power genetic of the card. (3 or above)
-   - The third value is for the physical defense genetic of the card. (6 above)
+   - The first value is the Brawl Class of the card. (P above)
+   - The second value is for the power genetic of the card. (3 above)
+   - The third value is for the physical defense genetic of the card. (A above)
    - The fourth value is for the magical defense genetic of the card. (0 above)
-   - The fifth value is always an X and is not a part of the genetic. 
-   - The final four values are four hexadecimal numbers creating 65,536 unique Genetic values that will assign the elemental compatibility of the Card. 
-   - Each of the genetics for power, physical defense and magical defense increases on a hexadecimal scale, with 0 being the weakest and F being the strongest.
 
 The power and defense genetics represents a range of possible attack or defense points. 0 will take values from 0-15, while F will take values from 240-255. 
 
 The card genetics are used in the following situations:
 
-The first two values are used for the Attacking card.
+The first two values are used for the Active card.
 The last two values are used for the Resting card.
 
 #### Power genetic
 
-The first value on the card is the power genetic. This is the card's offensive value. The example card has a power genetic of 3, which means its actual value is a random number chosen between 48 - 63 HP.
+The first value on the card is the power attribute. This is the card's offensive value. The example card has a power attribute of 3, which means its actual value is a random number chosen between 48 - 63 HP.
 
-**Brawl class genetic:**
-The second value on the card is the brawl class genetic. This value is not based on the hexadecimal scale like its other genetics, but instead is one of four classes. This genetic is represented by the letters P, S, D, and A. The card's brawl class determines how the values are assessed in card brawls.
+**Brawl Class genetic:**
+The second value on the card is the brawl class attribute. This value is not based on the hexadecimal scale like its other genetics, but instead is one of four classes. This genetic is represented by the letters P, S, D, and A. The card's brawl class determines how the values are assessed in card brawls.
 
 - P is a Physical brawl class
 - S is a Spell brawl class
 - D is a Defensive brawl class
-- A is an Ace or Weapon brawl class
+- A is an Ace brawl class
 
-The brawl class affects which genetic the attacking card attacks. P will attack the Physical Defense genetic, while S will attack the Magical Defense genetic. The other two have more obscure effects as they are rarer. D attack sthe lower of the two defenses and A attacks the lowest value on the card. It is possible to increase a cards Brawl class to D or A if it contains certain genetics.  
+The brawl class affects which attribute the Active card attacks. P will attack the Physical Defense attribute, while S will attack the Magical Defense attribute. The other two are genetically rarer, but can be earned by Leveling a card. D attacks the lower of the two defenses and A attacks the lowest value on the card. It is possible to increase a Card's Brawl Class at certain levels to D or A, but only if it contains certain genetics and was leveled at the appropriate time.  
 
 #### Physical Brawl
-If the challenging card has a brawl class genetic of P (Physical), the power value of this card challenges the physical defense of the resting card. 
+If the challenging card has a brawl class genetic of P (Physical), the power value of this card challenges the physical defense of the Resting card. 
 
 #### Spell Brawl
 
-If the challenging card has a brawl class genetic of S (Spell), the power value of this card challenges the magical defense of the resting card. 
+If the challenging card has a brawl class genetic of S (Spell), the power value of this card challenges the magical defense of the Resting card. 
 
 #### Defensive Struggle
 
-If the challenging card has a brawl class genetic of D (Defense), the power value of this card challenges the weaker of the two defense genetics of the resting card.
+If the challenging card has a brawl class genetic of D (Defense), the power value of this card challenges the weaker of the two defense genetics of the Resting card.
 
 #### Ace Brawl
 
-If the challenging card has a brawl class genetic of A (Ace), the strongest of all three values on this card challenges the weakest of all three values of the resting card.
+If the challenging card has a brawl class genetic of A (Ace), the strongest of all three values on this card challenges the weakest of all three values of the Resting card.
 
-#### Battle Mathematics
+#### Brawl Mathematics
      Additional Card Attributes:
      
-     Element: Each card has an elemental attribute (e.g., Fire, Water, Earth, Air).
-     Skill: Each card has a special skill that can be activated under certain conditions.
+     Element: Each card has an elemental attribute (e.g., Fire, Water, Earth, Air, or Void). This is determined by its strongest elemental genetic, but also considers the card adeptness with each element. 
+     Perk: Each card may have a special skill that can be activated under certain conditions.
 
      Battle Phases
 
@@ -154,12 +166,12 @@ If the challenging card has a brawl class genetic of A (Ace), the strongest of a
      Card A (Fire) vs. Card B (Earth): Fire has an advantage over Earth.
      Card A: Power = 85 + 10 (bonus) = 95
 
-     Phase 2: Skill Activation and Score Calculation
+     Phase 2: Perk Activation and Score Calculation
 
-     Skill Activation:
+     Perk Activation:
 
      Each card can activate its weapon and armor [Perk] if a specific condition is met.
-     Example Skills:
+     Example Perks:
      "Weapon": Increase power by 20 if the random attack score is above 50.
      "Armor": Reduce damage taken by 15 if the defense score is below 10.
      Score Calculation:
@@ -168,7 +180,7 @@ If the challenging card has a brawl class genetic of A (Ace), the strongest of a
      Example:
      Card A: Attack score = Random(0, 95) = 71
      Card B: Defense score = Random(0, 23) = 3
-     Apply skills if conditions are met:
+     Apply perks if conditions are met:
      If Card A's [Perk] activates (since 71 > 50), new attack score = 71 + 20 = 91
      If Card B's [Perk] activates (since 3 < 10), new defense score = 3 - 15 = -12 (minimum 0)
      
@@ -204,125 +216,250 @@ If the challenging card has a brawl class genetic of A (Ace), the strongest of a
      Final Scores: Final scores reflect the impact of skills and elemental bonuses, determining the battle outcome.
 
 ## Design Considerations
-- **Strategic Placement:** Players must consider card placement, equipped items, and magical effects.
+- **Strategic Placement:** Players must consider directional coverage for card placement on multiple fronts, equipped items, and elemental effects.
   
-- **Balance:** Ensure cards contain a balance of Face Values in each direction. When various rules are in effect, more consideration is needed to create the optimal deck for success. 
+- **Balance:** Ensure cards contain a balance of Face Values in each direction. With a breadth of considerations needed to create the optimal deck for success, finding the proper balance to work up the leaderboard and receive a tournament invite.
+
+- **Seasonal Tournaments:** At the end of each season, the top 64 players of the Leaderboard will be invited to play through a Tournament Bracket. 
   
-- **Variety:** Include a wide range of cards to encourage diverse strategies.
+- **Variety:** Include a wide range of cards to encourage diverse strategies. Each card contains a wide range of attributes that make it unique. 
   
 - **Customization:** Allow players to customize their decks of cards through crafting to suit their play style.
 
-## Essence Effectiveness Table
+## Rank Distribution
+Each percentage is the chance, when minted, of each of the four Ranks falling into one of the ranges. 
 
-| **Essence \ Target** | Earth | Water | Fire | Wind | Light | Darkness | Moon | Nature |
-|----------------------|-------|-------|------|------|-------|----------|------|--------|
-| **Earth**            | Normal| Normal| Strong| Weak | Normal| Normal   | Normal| Normal |
-| **Water**            | Normal| Normal| Weak | Strong   | Normal| Normal   | Normal| Strong     |
-| **Fire**             | Weak  | Strong    | Normal| Normal| Normal| Normal   | Normal| Strong    |
-| **Wind**             | Strong    | Weak  | Normal| Normal| Normal| Normal   | Normal| Normal|
-| **Light**            | Normal| Normal| Normal| Normal| Weak  | Strong       | Normal| Normal|
-| **Darkness**         | Normal| Normal| Normal| Normal| Strong    | Weak     | Normal| Normal|
-| **Moon**             | Normal| Normal| Normal| Normal| Normal| Normal   | Normal| Normal|
-| **Nature**           | Normal| Weak  | Normal| Strong| Weak| Normal   | Normal| Normal|
+| Rank Range | Common | Uncommon| Rare | Epic | Legendary |
+|------------|--------|---------|------|------|-----------|
+| 0-2        | 40%    | 30%     | 20%  | 15%  | 10%       |
+| 3-5        | 35%    | 30%     | 35%  | 35%  | 30%       |
+| 6-8        | 25%    | 40%     | 35%  | 35%  | 35%       |
+| 9-A        | 0%     | 0%      | 10%  | 15%  | 25%       |
+
+## Genetic Distribution
+When minted, there is a 1% chance of minting a card with an A Brawl class and 4% chance for a D Brawl Class. There is a 50% chance of minting an P Brawl Class, and 45% chance for an S Brawl Class. When changing rarity, the Card's genetics change to closer fit the following distribution: 
+
+| Hex Range | Common | Uncommon | Rare | Epic | Legendary |
+|-----------|--------|----------|------|------|-----------|
+| 0-3       | 35%    | 25%      | 15%  | 12%  | 12%        |
+| 4-7       | 45%    | 40%      | 40%  | 28%  | 18%       |
+| 8-B       | 15%    | 30%      | 40%  | 50%  | 35%       |
+| C-F       | 5%     | 5%       | 5%   | 20%  | 35%       |
+
+## Elemental Effectiveness Table
+Note: The Void type is derived from multiple essence subtypes, Light, Dark, Moon, and Nature. 
+
+| **Element \ Target** | Earth  | Water | Fire  | Wind  | Void    |
+|----------------------|--------|-------|-------|-------|---------|
+| **Earth**            | Normal | Weak  | Strong| Weak  | Normal  |
+| **Water**            | Strong | Normal| Weak  | Strong| Weak    |
+| **Fire**             | Normal | Strong| Normal| Weak  | Weak    |
+| **Wind**             | Strong | Weak  | Strong| Normal| Weak    |
+| **Void**             | Strong | Strong| Normal| Strong| Normal  |
 
 ## Resource list
 
-| **Ingredient**   | **Category**    | **Description**                                      |
-|------------------|-----------------|------------------------------------------------------|
-| Wax              | Ingredient      | Used for sealing and waterproofing                   |
-| Water            | Ingredient      | Essential liquid, often used as a solvent            |
-| Vinegar          | Ingredient      | Acidic liquid used in various concoctions            |
-| Root             | Ingredient      | Plant-based ingredient, often used for its properties|
-| Oil              | Ingredient      | Used for lubrication and combustion                  |
-| Mushroom         | Ingredient      | Fungal ingredient with various effects               |
-| Mud              | Ingredient      | Earthy mixture, often used for grounding spells      |
-| Limestone        | Ingredient      | Calcium-rich mineral used in various mixtures        |
-| Iron             | Ingredient      | Metal used for strengthening concoctions             |
-| Gunpowder        | Ingredient      | Explosive mixture used for powerful effects          |
-| Grease           | Ingredient      | Lubricant often used in mechanical concoctions       |
-| Feather          | Ingredient      | Light and airy, used for levitation spells           |
-| Ethanol          | Ingredient      | Alcohol used as a solvent and for combustion         |
-| Dry Ice          | Ingredient      | Solid carbon dioxide used for freezing effects       |
-| Clay             | Ingredient      | Earthy material used for crafting and grounding      |
-| Bone             | Ingredient      | Used for necromancy and strengthening spells         |
-| Ash              | Ingredient      | Remnants of combustion, used in various spells       |
-| Mythril          | Ingredient      | Rare metal used for crafting powerful items          |
-| Adamantite       | Ingredient      | Extremely hard metal used for ultimate weapons       |
-| Lunar Curtain    | Ingredient      | Creates a barrier, often used for protection         |
-| Phoenix Feather  | Ingredient      | Revives the fallen, symbolizes rebirth               |
-| Dragon Fang      | Ingredient      | Rare and powerful, used for high-level concoctions   |
-| Magicite Shard   | Ingredient      | Fragment of a magic crystal, used for spell casting  |
-| Echo Screen      | Ingredient      | Cures silence, allowing spells to be cast            |
-| Ether            | Ingredient      | Restores magical energy                              |
-| Dreamstone       | Ingredient      | Rare stone, used for crafting powerful artifacts     |
-| Rainbow Shell    | Ingredient      | Used to create ultimate weapons and armor            |
-| Luminite         | Ingredient      | Luminescent material, used for light-based items     |
-| Aquanix          | Essence         | Water spirit, grants water-based magic               |
-| Terralon         | Essence         | Earth spirit, grants earth-based magic               |
-| Aerion           | Essence         | Wind spirit, grants wind-based magic                  |
-| Pyron            | Essence         | Fire spirit, grants fire-based magic                 |
-| Nocturne         | Essence         | Void-Darkness spirit, grants dark-based magic             |
-| Radiance         | Essence         | Void-Light spirit, grants light-based magic               |
-| Selene           | Essence         | Void-Moon spirit, grants lunar-based magic                |
-| Verdant          | Essence         | Void-Life spirit, grants nature-based magic               |
-| Iron             | Material        | A common and sturdy metal used for basic weaponry and armor. |
-| Steel            | Material        | An alloy of iron, stronger and more durable, ideal for high-quality weapons and armor. |
-| Mithril          | Material        | A lightweight, silver metal known for its exceptional strength and magical properties. |
-| Adamantine       | Material        | A rare and nearly indestructible metal, perfect for legendary weapons and armor. |
-| Obsidian         | Material        | A volcanic glass that can be sharpened to a razor edge, though brittle and best for slicing weapons. |
-| Dragonbone       | Material        | Bones from ancient dragons, incredibly strong and imbued with magical energy. |
-| Crystal          | Material        | Mystical crystals that can channel magical energies, used in crafting magical weapons. |
-| Darkwood         | Material        | A rare and sturdy wood with dark coloration, used for crafting bows and staves. |
-| Orichalcum       | Material        | A mythical metal with a golden hue, known for its durability and enchantment capabilities. |
-| Moonstone        | Material        | A pale, luminescent stone with magical properties, often used in crafting magical jewelry and weapons. |
-| Dwarven Steel    | Material        | Superior steel forged by dwarven smiths, known for its exceptional quality and strength. |
-| Elven Silver     | Material        | A fine and elegant metal used by elves, light and strong with magical properties. |
-| Froststeel       | Material        | Steel imbued with the essence of ice, causing weapons to have a chilling effect. |
-| Bloodstone       | Material        | A dark, crimson stone that can enhance the power of blood magic in weapons. |
-| Star Metal       | Material        | Metal forged from meteorite fragments, possessing unique otherworldly properties. |
-| Voidsteel        | Material        | A dark, shadowy metal that absorbs light, used in forging weapons with void or dark magic. |
-| Living Wood      | Material        | Enchanted wood that retains the essence of life, used for crafting living weapons and armor. |
-| Thunderstone     | Material        | A rare stone that can store electrical energy, used to forge weapons with thunderous power. |
-| Phoenix Feather  | Material        | Feathers from the mythical phoenix, used to craft weapons with regenerative and fiery properties. |
-| Shadowglass      | Material        | A dark, reflective glass that can absorb and manipulate shadows, used in stealth weapons. |
+### Ingredients
+Some ingredients are unused in the first version of the Crafting implementation. This is intended to drive input from Early Access Users on future Formulas for Spells, Materials, and Equipment. 
 
+| **Ingredient**        | **Description**                                      |
+|-----------------------|------------------------------------------------------|
+| Wax                   | Used for sealing and waterproofing                   |
+| Water                 | Essential liquid, often used as a solvent            |
+| Vinegar               | Acidic liquid used in various concoctions            |
+| Root                  | Plant-based ingredient                               |
+| Oil                   | Used for lubrication and combustion                  |
+| Mushroom              | Fungal ingredient with various effects               |
+| Limestone             | Calcium-rich mineral used in various mixtures        |
+| Iron                  | Metal used for strengthening concoctions             |
+| Gunpowder             | Explosive mixture used for powerful effects          |
+| Ethanol               | Alcohol used as a solvent and for combustion         |
+| Dry Ice               | Solid carbon dioxide used for freezing effects       |
+| Clay                  | Earthy material used for crafting and grounding      |
+| Bone                  | Used for necromancy and strengthening spells         |
+| Ash                   | Remnants of combustion, used in various spells       |
+| Mythril               | Rare metal used for crafting powerful items          |
+| Phoenix Dust          | Revives the fallen, symbolizes rebirth               |
+| Dragon Fang           | Rare and powerful, used for high-level concoctions   |
+| Ether                 | Restores magical energy                              |
+| Dreamstone            | Rare stone, used for crafting powerful artifacts     |
+| Luminite              | Luminescent material, used for light-based items     |
+
+### Essences
+
+| **Essence**           | **Description**                                   |
+|-----------------------|---------------------------------------------------|
+| Aquanix               | Water spirit, grants water-based magic            |
+| Terralon              | Earth spirit, grants earth-based magic            |
+| Aerion                | Wind spirit, grants wind-based magic              |
+| Pyron                 | Fire spirit, grants fire-based magic              |
+| Nocturne              | Void-Darkness spirit, grants dark-based magic     |
+| Radiance              | Void-Light spirit, grants light-based magic       |
+| Selene                | Void-Moon spirit, grants lunar-based magic        |
+| Verdant               | Void-Nature spirit, grants nature-based magic     |
+
+### Materials
+Lore note: Some materials, like Leather, are commonly dropped by NPCs when a player loses. 
+
+| **Material**          | **Description**                                                                                          |
+|-----------------------|----------------------------------------------------------------------------------------------------------|
+| Leather               | Durable hides, heirlooms symbolizing ancestral resilience and victories.         |
+| Iron                  | A sturdy metal used for basic weaponry and armor.                                             |
+| Adamantine            | A rare and nearly indestructible metal |
+| Obsidian              | A volcanic glass that can be sharpened to a razor edge, though brittle.     |
+| Dragonbone            | Bones from ancient dragons, incredibly strong and imbued with magical energy.                            |
+| Crystal               | Mystical crystals that can channel magical energies, used in crafting magical weapons.                   |
+| Darkwood              | A rare and sturdy wood with dark coloration.                          |
+| Orichalcum            | A mythical metal with a golden hue, known for its durability and enchantment capabilities.               |
+| Moonstone             | A pale, luminescent stone with magical properties, often used in crafting magical jewelry and weapons.   |
+| Dwarven Steel         | Superior steel forged by dwarven smiths, known for its exceptional quality and strength.                 |
+| Elven Silver          | A elegant metal used by elves, light and strong with magical properties.                        |
+| Froststeel            | Steel imbued with the essence of ice, causing weapons to have a chilling effect.                         |
+| Bloodstone            | A dark, crimson stone that can enhance the power of blood magic in weapons.                              |
+| Star Metal            | Metal forged from meteorite fragments, possessing unique otherworldly properties.                        |
+| Voidsteel             | A dark, shadowy metal that absorbs light, used in forging weapons with void or dark magic.               |
+| Living Wood           | Enchanted wood that retains the essence of life |
+| Thunderstone          | A rare stone that can store electrical energy |
+| Phoenix Feather       | Feathers from the mythical Phoenix |
+| Shadowglass           | A dark, reflective glass that can absorb and manipulate shadows |
 
 ## Crafting through Synthesis and Alchemy to Create Legendary Weapons
 
 ### Synthesis Formulas for Equipment
-These items may be "forged" to a card to alter it's values in Blockchainia: CryptoCards. 
+These items may be Forged to a card to add Perks to the card. These Perks activate in the Battle Mathematics.  
 
-#### Common Weapons and Armor Formulas
+### Common Weapons
 
-| **Item**           | **Formula**                           | **Category** | **Description**                                                 |
-|--------------------|---------------------------------------|--------------|-----------------------------------------------------------------|
-| Fire Sword         | Pyron + Iron + Feather                | Weapon       | A sword imbued with the power of fire, dealing extra fire damage. |
-| Ice Dagger         | Aquanix + Mithril + Dry Ice           | Weapon       | A dagger that freezes enemies upon contact.                     |
-| Lightning Axe      | Aerion + Steel + Thunderstone         | Weapon       | An axe that crackles with electricity, stunning enemies.        |
-| Earth Hammer       | Terralon + Iron + Mud                 | Weapon       | A hammer that causes small earthquakes on impact.               |
-| Shadow Blade       | Nocturne + Voidsteel + Shadowglass    | Weapon       | A blade that deals additional darkness damage.                  |
-| Light Mace         | Radiance + Mithril + Luminite         | Weapon       | A mace that emits a blinding light, damaging and blinding enemies. |
-| Moon Spear         | Selene + Orichalcum + Moonstone       | Weapon       | A spear that glows with lunar energy, increasing precision and power. |
-| Nature Bow         | Verdant + Darkwood + Root             | Weapon       | A bow that enhances arrows with nature's power, causing additional damage. |
-| Firearm (Pistol)   | Iron + Grease + Gunpowder             | Weapon       | A basic firearm that is reliable and effective at short range.  |
-| Firearm (Rifle)    | Steel + Luminite + Gunpowder          | Weapon       | A rifle with enhanced aiming capabilities for long-range attacks. |
-| Crossbow           | Darkwood + Iron + Grease              | Weapon       | A crossbow that fires bolts with precision and power.           |
-| Elemental Crossbow | Crystal + Darkwood + Etherstone       | Weapon       | A crossbow that can fire elemental bolts.                       |
-| Regenerative Armor | Phoenix Feather + Mithril + Bone      | Armor        | Armor that grants the wearer regenerative abilities.            |
-| Elemental Shield   | Aquanix + Pyron + Iron                | Armor        | A shield that provides resistance to elemental damage.          |
-| Stealth Suit       | Grease + Clay + Nocturne              | Armor        | Armor that enhances the wearer's stealth abilities.             |
-| Scale Armor        | Dragonbone + Dwarven Steel + Crystal  | Armor        | Armor made from dragon scales, offering unmatched protection.   |
-| Invisibility Cloak | Etherstone + Moonstone + Elven Silver | Armor        | A cloak that provides invisibility and enhances magical abilities. |
-| Cosmic Helm        | Star Metal + Orichalcum + Mithril     | Armor        | A helmet that grants the wearer cosmic awareness and protection. |
-| Frost Gauntlets    | Froststeel + Silver + Etherstone      | Armor        | Gauntlets that grant the wearer control over ice and cold.      |
-| Nature Boots       | Verdant + Living Wood + Leather       | Armor        | Boots that enhance the wearer's connection to nature, boosting speed and agility. |
+| **Item**            | **Formula**           | **Description**                                                 |
+|---------------------|-----------------------|-----------------------------------------------------------------|
+| Iron Sword          | Iron + Darkwood        | A simple yet reliable sword.                                    |
+| Iron Dagger         | Iron + Root          | A sturdy dagger with enhanced sharpness.                        |
+| Wooden Bow          | Darkwood + Oil     | A basic bow crafted from darkwood.                              |
+| Iron Hammer         | Iron + Clay            | A heavy hammer made from iron.                                  |
+| Iron Spear          | Iron + Root          | A spear with a strong steel tip.                                |
 
+### Common Armor
 
-### Synthesis Formulas for Legendary Weapons, Armor, and Accessories
-Legendary Weapons, Armor, and Accessories can be created by synthesizing Precious Stones with other Materials, Essences, and Ingredients to an existing Weapon, Armor, or Accessory. The Stone and Weapon chosen alter the final genetics of the Legendary Weapon produced. 
+| **Item**            | **Formula**           | **Description**                                                 |
+|---------------------|-----------------------|-----------------------------------------------------------------|
+| Steel Armor         | Iron + Leather        | Basic armor made from iron and leather.                         |
+| Steel Helmet        | Dwarven Steel + Mushroom      | A helmet made from durable steel.                               |
+| Leather Boots       | Leather + Oil      | Simple boots made from treated leather.                         |
+| Wooden Shield       | Darkwood + Iron       | A basic shield made from darkwood reinforced with iron.         |
+| Iron Gauntlets      | Iron + Leather        | Protective gauntlets made from iron and leather.                |
 
+### Uncommon Weapons
 
-#### Synthesizing Precious Stones
+| **Item**            | **Formula**           | **Description**                                                 |
+|---------------------|-----------------------|-----------------------------------------------------------------|
+| Bronze Sword        | Bronze + Darkwood      | A sword made from bronze, lighter than iron.                    |
+| Silver Dagger       | Silver + Root         | A sharp dagger made from silver, effective against certain creatures. |
+| Composite Bow       | Darkwood + Dwarven Steel      | A stronger bow made with darkwood and steel.                    |
+| Warhammer           | Dwarven Steel + Clay           | A heavy warhammer for devastating blows.                        |
+| Iron Pike           | Iron + Root           | A long pike for keeping enemies at a distance.                  |
+
+### Uncommon Armor
+
+| **Item**            | **Formula**           | **Description**                                                 |
+|---------------------|-----------------------|-----------------------------------------------------------------|
+| Bronze Armor        | Bronze + Leather      | Armor made from bronze and leather.                             |
+| Silver Helmet       | Silver + Oil       | A helmet made from shiny silver.                                |
+| Sturdy Boots        | Leather + Dwarven Steel       | Boots reinforced with steel for extra protection.               |
+| Bronze Shield       | Bronze + Iron         | A shield made from bronze and iron.                             |
+| Silver Gauntlets    | Silver + Leather      | Gauntlets made from silver and leather.                         |
+
+### Rare Weapons
+
+| **Item**            | **Formula**                           | **Description**                                                 |
+|---------------------|---------------------------------------|-----------------------------------------------------------------|
+| Fire Sword          | Pyron + Iron + Darkwood                | A sword imbued with the power of fire, dealing extra fire damage. |
+| Ice Dagger          | Aquanix + Mithril + Dry Ice           | A dagger that freezes enemies upon contact.                     |
+| Lightning Axe       | Aerion + Dwarven Steel + Thunderstone         | An axe that crackles with electricity, stunning enemies.        |
+| Earth Hammer        | Terralon + Iron + Clay                 | A hammer that causes small earthquakes on impact.               |
+| Shadow Blade        | Nocturne + Voidsteel + Shadowglass    | A blade that deals additional darkness damage.                  |
+| Light Mace          | Radiance + Mithril + Luminite         | A mace that emits a blinding light, damaging and blinding enemies. |
+| Moon Spear          | Selene + Orichalcum + Moonstone       | A spear that glows with lunar energy, increasing precision and power. |
+| Nature Bow          | Verdant + Darkwood + Root             | A bow that enhances arrows with nature's power, causing additional damage. |
+
+### Rare Armor
+
+| **Item**            | **Formula**                           | **Description**                                                 |
+|---------------------|---------------------------------------|-----------------------------------------------------------------|
+| Elemental Shield    | Aquanix + Pyron + Iron                | A shield that provides resistance to elemental damage.          |
+| Stealth Suit        | Oil + Clay + Nocturne              | Armor that enhances the wearer's stealth abilities.             |
+| Frost Gauntlets     | Froststeel + Silver + Ether           | Gauntlets that grant the wearer control over ice and cold.      |
+| Nature Boots        | Verdant + Living Wood + Leather       | Boots that enhance the wearer's connection to nature, boosting speed and agility. |
+
+### Epic Weapons
+
+| **Item**            | **Formula**                           | **Description**
+
+### Epic Weapons
+
+| **Item**            | **Formula**                           | **Description**                                                 |
+|---------------------|---------------------------------------|-----------------------------------------------------------------|
+| Firearm (Pistol)    | Iron + Oil + Gunpowder             | A basic firearm that is reliable and effective at short range.  |
+| Firearm (Rifle)     | Dwarven Steel + Luminite + Gunpowder          | A rifle with enhanced aiming capabilities for long-range attacks. |
+| Crossbow            | Darkwood + Iron + Oil              | A crossbow that fires bolts with precision and power.           |
+| Elemental Crossbow  | Crystal + Darkwood + Ether            | A crossbow that can fire elemental bolts.                       |
+| Aqua Trident        | Aquanix + Dwarven Steel + Crystal             | A trident that controls water and deals heavy water damage.     |
+| Lightning Blade     | Aerion + Silver + Thunderstone        | A blade that strikes with the power of lightning.               |
+| Earth Axe           | Terralon + Iron + Dragonbone          | An axe that can split the earth and create tremors.             |
+| Flame Sword         | Pyron + Star Metal + Phoenix Feather  | A sword that deals immense fire damage and burns enemies.       |
+
+### Epic Armor
+
+| **Item**            | **Formula**                           | **Description**                                                 |
+|---------------------|---------------------------------------|-----------------------------------------------------------------|
+| Regenerative Armor  | Phoenix Feather + Mithril + Bone      | Armor that grants the wearer regenerative abilities.            |
+| Scale Armor         | Dragonbone + Dwarven Steel + Crystal  | Armor made from dragon scales, offering unmatched protection.   |
+| Invisibility Cloak  | Ether + Moonstone + Elven Silver      | A cloak that provides invisibility and enhances magical abilities. |
+| Earth Gauntlets     | Terralon + Iron + Stone               | Gauntlets that grant the wearer increased strength and control over earth. |
+| Flame Armor         | Pyron + Dwarven Steel + Luminite              | Armor that protects the wearer from fire and increases fire magic potency. |
+| Ice Bow             | Aquanix + Mithril + Froststeel        | A bow that shoots arrows of ice, freezing targets on impact.    |
+| Nature Cloak        | Verdant + Living Wood + Root          | A cloak that allows the wearer to blend seamlessly with nature. |
+
+### Legendary Weapons
+
+| **Item**            | **Formula**                                                    | **Description**                                                 |
+|---------------------|----------------------------------------------------------------|-----------------------------------------------------------------|
+| Thunder Hammer      | Aerion + Dwarven Steel + Thunderstone + Sapphire + Lightning Axe| A hammer that can summon thunderstorms on impact.               |
+| Shadow Dagger       | Nocturne + Voidsteel + Shadowglass + Onyx + Shadow Blade       | A dagger that deals critical damage from the shadows.           |
+| Lunar Staff         | Selene + Crystal + Moonstone + Opal + Moon Spear               | A staff that channels lunar energy for powerful spells.         |
+| Phoenix Blade       | Radiance + Star Metal + Phoenix Feather + Ruby + Fire Sword    | A blade that can resurrect the wielder and deal immense fire damage. |
+| Void Sword          | Nocturne + Voidsteel + Ether + Amethyst + Shadow Blade         | A sword that drains the life from enemies.                      |
+| Frost Bow           | Aquanix + Star Metal + Froststeel + Diamond + Ice Dagger       | A bow that unleashes freezing arrows with every shot.           |
+| Nature Staff        | Verdant + Crystal + Living Wood + Emerald + Nature Bow         | A staff that channels the power of nature, enhancing healing and growth. |
+| Light Sword         | Radiance + Mithril + Luminite + Topaz + Light Mace             | A sword that emits blinding light, dealing significant damage to dark creatures. |
+| Blazing Sword       | Pyron + Iron + Mithril + Ruby + Fire Sword                     | A sword imbued with the power of fire, dealing extra fire damage. |
+| Sniper Rifle        | Iron + Oil + Luminite + Sapphire + Firearm (Rifle)          | A high-precision firearm with enhanced aiming capabilities.     |
+| Energy Sword        | Luminite + Mithril + Oil + Diamond + Fire Sword             | A melee weapon with a blade made of pure energy.                |
+| Grenade Launcher    | Gunpowder + Iron + Oil + Topaz + Firearm (Pistol)           | A firearm that launches explosive grenades.                     |
+| Plasma Rifle        | Luminite + Iron + Ethanol + Emerald + Firearm (Rifle)          | A futuristic rifle that shoots plasma bolts.                    |
+| Thunder Blade       | Thunderstone + Iron + Etherstone + Sapphire + Lightning Axe    | A sword that crackles with electricity, stunning foes.          |
+| Mystic Staff        | Crystal + Elven Silver + Moonstone + Opal + Elemental Crossbow | A staff that enhances magical abilities, channeling powerful spells. |
+| Celestial Mace      | Star Metal + Adamantine + Bloodstone + Ruby + Light Mace       | A mace that glows with celestial light, smiting enemies.        |
+
+### Legendary Armor
+
+| **Item**            | **Formula**                                                    | **Description**                                                 |
+|---------------------|----------------------------------------------------------------|-----------------------------------------------------------------|
+| Cosmic Helm         | Star Metal + Orichalcum + Mithril + Diamond + Invisibility Cloak| A helmet that grants the wearer cosmic awareness and protection. |
+| Phoenix Armor       | Phoenix Feather + Star Metal + Mithril + Ruby + Regenerative Armor| Armor that grants the wearer the power of resurrection.         |
+| Light Shield        | Radiance + Orichalcum + Luminite + Topaz + Elemental Shield    | A shield that emits blinding light, repelling enemies.          |
+| Moon Gauntlets      | Selene + Silver + Moonstone + Opal + Frost Gauntlets           | Gauntlets that increase the wearer's strength during the night. |
+| Frost Gauntlets     | Froststeel + Silver + Ether + Sapphire + Frost Gauntlets       | Gauntlets that grant the wearer control over ice and cold.      |
+| Earth Armor         | Terralon + Dragonbone + Dwarven Steel + Emerald + Scale Armor  | Armor that provides unparalleled defense and strength.          |
+| Shadow Cloak        | Nocturne + Voidsteel + Ether + Onyx + Stealth Suit             | A cloak that makes the wearer invisible in the shadows.         |
+| Nature Boots        | Verdant + Living Wood + Leather + Emerald + Nature Boots       | Boots that enhance the wearer's connection to nature, boosting speed and agility. |
+| Star Metal Helm     | Star Metal + Orichalcum + Mithril + Diamond + Cosmic Helm      | A helmet that grants the wearer cosmic awareness and protection. |
+| Ethereal Cloak      | Etherstone + Moonstone + Elven Silver + Opal + Invisibility Cloak| A cloak that provides invisibility and enhances magical abilities. |
+| Phoenix Cape| Phoenix Feather + Living Wood + Bloodstone + Ruby + Regenerative Armor| A cape that provides regeneration and fiery protection.          |
+| Moonlight Robe      | Selene + Silk + Moonstone + Opal + Stealth Suit                | A robe that grants the wearer enhanced magical abilities and stealth. |
+| Flame Cloak         | Pyron + Silk + Gold + Ruby + Flame Armor                       | A cloak that grants immunity to fire and increases fire magic potency. |
+| Storm Helm          | Thunderstone + Iron + Luminite + Sapphire + Lightning Blade    | A helmet that channels the power of storms, protecting the wearer. |
+
+### Synthesizing Precious Stones
 Precious stones can be used to craft Legendary Weapons to Forge to cards . They can also be used for the summoning of powerful allies in the Blockchainia: OpenWorlds and Blockchainia: CryptoBrawl. 
 
 | **Precious Stone**    | **Formula**                         | **Name**       | **Description**                                                       |
@@ -335,54 +472,13 @@ Precious stones can be used to craft Legendary Weapons to Forge to cards . They 
 | Lunar Pearl           | Selene + Moonstone + Froststeel     | Artemis        | Summons Artemis, goddess of the moon and hunt, to guide and protect.   |
 | Nature Emerald        | Verdant + Living Wood Heart + Dwarven Steel | Cernunnos | Summons Cernunnos, the horned god, to oversee nature and wildlife.     |
 | Volcanic Garnet       | Pyron + Terralon + Adamantine       | Surtr          | Summons Surtr, the fire giant, to unleash volcanic fury.               |
-| Storm Topaz           | Aerion + Thunderstone + Steel       | Thor           | Summons Thor, god of thunder, to wield his mighty hammer and storm.    |
+| Storm Topaz           | Aerion + Thunderstone + Dwarven Steel       | Thor           | Summons Thor, god of thunder, to wield his mighty hammer and storm.    |
 | Mystic Amethyst       | Radiance + Etherstone + Crystal     | Amaterasu      | Summons Amaterasu, goddess of the sun, to illuminate and purify.       |
 | Warrior's Bloodstone  | Pyron + Dragonbone + Bloodstone     | Ares           | Summons Ares, god of war, to lead in battle and inspire warriors.      |
 | Ocean's Heart         | Aquanix + Sapphire + Luminite       | Ryujin         | Summons Ryujin, the dragon god of the sea, to control tides and marine life. |
 | Frost Crystal         | Aquanix + Froststeel + Mithril      | Yuki-Onna      | Summons Yuki-Onna, the snow woman, to command ice and cold.            |
-| Phoenix Feather       | Pyron + Phoenix Feather + Obsidian  | Phoenix        | Summons the Phoenix, a mythical bird, to revive and incinerate foes.   |
 | Chaos Ruby            | Nocturne + Bloodstone + Voidsteel   | Loki           | Summons Loki, the trickster god, to cause chaos and deceive enemies.   |
 | Celestial Moonstone   | Selene + Star Metal + Moonstone     | Selene         | Summons Selene, the moon goddess, to bless with lunar magic and protection. |
-
-#### Synthesizing Legendary Weapons, Armor, and Accessories
-
-| **Item**             | **Formula**                         | **Category** | **Description**                                                 | **Power** |
-|----------------------|-------------------------------------|--------------|-----------------------------------------------------------------|-----------|
-| Ring of Radiance     | Radiance + Mythril + Feather + [Stone]        | Accessory    | A ring that enhances light-based magic and spells.              | 7 |
-| Lunar Amulet         | Selene + Luminite + Ash + [Stone]             | Accessory    | An amulet that boosts lunar-based magic and nighttime abilities. | 8 |
-| Gauntlets of Strength| Terralon + Iron + Bone + [Stone]              | Accessory    | Gauntlets that significantly increase the wearer's physical strength. | 7 |
-| Titan's Gauntlets    | Adamantine + Iron + Obsidian + [Stone]        | Accessory    | Gauntlets that bestow the strength of the titans to the wearer.  | 9 |
-| Crystal Band         | Crystal + Elven Silver + Etherstone + [Stone] | Accessory    | A band that enhances the wearer's magical power and resilience.  | 8 |
-| Solar Gauntlets      | Radiance + Gold + Iron + [Stone]              | Accessory    | Gauntlets that boost the wearer's strength and radiate light.    | 7 |
-| Void Ring            | Nocturne + Shadowglass + Silver + [Stone]     | Accessory    | A ring that grants the wearer control over shadows and darkness. | 6 |
-| Ocean Pendant        | Aquanix + Sapphire + Mithril + [Stone]        | Accessory    | A pendant that allows the wearer to breathe underwater and control water. | 8 |
-| Frost Gauntlets      | Froststeel + Silver + Etherstone + [Stone]    | Accessory    | Gauntlets that grant the wearer control over ice and cold.       | 7 |
-| Phoenix Armor        | Phoenix Feather + Mythril + Bone + [Stone]    | Armor        | Armor that grants the wearer regenerative abilities.            | 9 |
-| Elemental Shield     | Aquanix + Pyron + Iron + [Stone]              | Armor        | A shield that provides resistance to elemental damage.          | 8 |
-| Stealth Suit         | Grease + Clay + Nocturne + [Stone]            | Armor        | Armor that enhances the wearer's stealth abilities.             | 7 |
-| Dragon Scale Armor   | Dragonbone + Dwarven Steel + Crystal + [Stone]| Armor        | Armor made from dragon scales, offering unmatched protection.    | 9 |
-| Ethereal Cloak       | Etherstone + Moonstone + Elven Silver + [Stone]| Armor       | A cloak that provides invisibility and enhances magical abilities. | 8 |
-| Phoenix Feather Cape | Phoenix Feather + Living Wood + Bloodstone + [Stone] | Armor  | A cape that provides regeneration and fiery protection.          | 8 |
-| Star Metal Helm      | Star Metal + Orichalcum + Mithril + [Stone]   | Armor        | A helmet that grants the wearer cosmic awareness and protection. | 9 |
-| Moonlight Robe       | Selene + Silk + Moonstone + [Stone]           | Armor        | A robe that grants the wearer enhanced magical abilities and stealth. | 8 |
-| Flame Cloak          | Pyron + Silk + Gold + [Stone]                 | Armor        | A cloak that grants immunity to fire and increases fire magic potency. | 8 |
-| Storm Helm           | Thunderstone + Iron + Luminite + [Stone]      | Armor        | A helmet that channels the power of storms, protecting the wearer. | 9 |
-| Blazing Sword        | Pyron + Iron + Mythril + [Stone]              | Weapon       | A sword imbued with the Stone of fire, dealing extra fire damage. | 7 |
-| Sniper Rifle         | Iron + Grease + Luminite + [Stone]            | Weapon       | A high-precision firearm with enhanced aiming capabilities.     | 8 |
-| Energy Sword         | Luminite + Mythril + Grease + [Stone]         | Weapon       | A melee weapon with a blade made of pure energy.                | 9 |
-| Grenade Launcher     | Gunpowder + Iron + Grease + [Stone]           | Weapon       | A firearm that launches explosive grenades.                     | 8 |
-| Plasma Rifle         | Luminite + Iron + Ethanol + [Stone]           | Weapon       | A futuristic rifle that shoots plasma bolts.                    | 7 |
-| Thunder Hammer       | Thunderstone + Iron + Steel + [Stone]         | Weapon       | A powerful hammer that summons thunder with each strike.        | 7 |
-| Frost Blade          | Froststeel + Mithril + Obsidian + [Stone]     | Weapon       | A sword that emits a chilling aura, freezing enemies upon contact. | 6 |
-| Shadow Dagger        | Shadowglass + Voidsteel + Darkwood + [Stone]  | Weapon       | A dagger that allows the wielder to move through shadows unseen. | 5 |
-| Inferno Axe          | Pyron + Iron + Steel + [Stone]                | Weapon       | An axe that ignites upon impact, dealing massive fire damage.    | 8 |
-| Glacial Spear        | Froststeel + Mithril + Orichalcum + [Stone]   | Weapon       | A spear that chills the air, freezing enemies it pierces.       | 7 |
-| Shadow Bow           | Shadowglass + Darkwood + Luminite + [Stone]   | Weapon       | A bow that fires arrows of pure darkness, confounding enemies.  | 6 |
-| Thunder Blade        | Thunderstone + Iron + Etherstone + [Stone]    | Weapon       | A sword that crackles with electricity, stunning foes.          | 7 |
-| Mystic Staff         | Crystal + Elven Silver + Moonstone + [Stone]  | Weapon       | A staff that enhances magical abilities, channeling powerful Stones. | 9 |
-| Celestial Mace       | Star Metal + Adamantine + Bloodstone + [Stone]| Weapon       | A mace that glows with celestial light, smiting enemies.        | 8 |
-| Gale Whip            | Aerion + Mithril + Silk + [Stone]             | Weapon       | A whip that summons gusts of wind, cutting through enemies.     | 6 |
-| Venom Dagger         | Verdant + Living Wood + Poison + [Stone]      | Weapon       | A dagger that delivers a deadly poison, weakening enemies.      | 5 |
 
 ### Alchemy Formulas
 #### Alchemy Formulas for Consumable Spells
@@ -423,21 +519,20 @@ Each Legendary spell can progress from its base [Element], to [Element]+, to its
 |-------------|----------------------|-------------------------------------------------------|---------------------------------------------------------------------------------|
 | Earth       | Gaia's Wrath         | Earth Crystal + Earth Hammer                            | Unleashes the fury of the Earth, causing massive earthquakes and upheaval.      |
 | Water       | Poseidon's Fury      | Aqua Gem + Ocean's Heart + Glacial Spear              | Summons a colossal tidal wave and torrential rain to devastate enemies.         |
-| Fire        | Inferno Blaze        | Flame Ruby + Inferno Axe + Phoenix Feather Cape       | Engulfs the battlefield in intense flames, incinerating everything in sight.    |
+| Fire        | Inferno Blaze        | Flame Ruby + Inferno Axe + Phoenix Cape       | Engulfs the battlefield in intense flames, incinerating everything in sight.    |
 | Wind        | Tempest of the Skies | Ocean Pendant + Thunder Blade + Gale Whip              | Conjures a massive storm, with powerful winds and lightning strikes.            |
 | Light       | Radiant Judgment     | Light Diamond + Ring of Radiance + Celestial Mace     | Calls down beams of divine light to smite and purify the land.                  |
-| Darkness    | Shadow Cataclysm     | Shadow Onyx + Shadow Dagger + Void Ring               | Summons a void of darkness, engulfing enemies and disrupting their senses.      |
+| Darkness    | Cataclysm     | Shadow Onyx + Shadow Dagger + Void Ring               | Summons a void of darkness, engulfing enemies and disrupting their senses.      |
 | Moon        | Lunar Eclipse        | Lunar Pearl + Moonlight Robe + Ethereal Cloak         | Brings forth an eclipse, casting a shadow over the battlefield and empowering allies. |
 | Nature      | Verdant Rebirth      | Nature Emerald + Venom Dagger + Nature Boots          | Revitalizes the land, causing plants to grow rapidly and heal allies.           |
 
-
 ## Forging
-Weapons, Armor, Accessories, and Spells can be used to increase a Cards statistics. Forging Weapons, Armor, or Accessories to a card will essentially burn the item embed it to the card of choice, altering the cards genetics and the images shown on the face of the card. 
+Equipment and Spells can be used to increase a Cards statistics. Forging Weapons, Armor, or Accessories to a card will essentially burn the item, embedding it to the card of choice, altering the cards genetics and the images shown on the face of the card. As all of these items will have utility in future games, players are encouraged to earn as multiple copies of each throughout the season, and to not Forge every item to a card. 
 
 ### Game Progression
-- **Match-Based Play:** Players enter matches, competing against both AI and other players. To play against AI, players must "ante-up". 
+- **Match-Based Play:** Players enter matches, competing against both AI and other players. To play against AI, players must "Ante-up". 
 - **The Iron Price** Upon match end, the winning player may take a perishable copy of one card from the opponents deck. 
-- **Crafting and Upgrading:** Post-match, players use collected essences and materials to craft and upgrade spells, weapons, and pets.
+- **Crafting and Upgrading:** Post-match, players use collected essence and materials to craft and upgrade spells, weapons, and pets.
 
 - **Items, Relics, and Artifacts:** Collect in game items of various utility in future games. 
 
@@ -447,19 +542,23 @@ Weapons, Armor, Accessories, and Spells can be used to increase a Cards statisti
 The game is set in a virtual on-chain realm where the separation of magic and technology has been obfuscated from the public by a shadowy organization. Ancient ruins and mines scatter the landscape, providing rich sources of elemental essence and raw materials. NPC characters inhabit the land, and have littered it with monuments, fountains, as well as various spiritual relics and artifacts revealing a deep but unspoken culture. Their interactions give clues to the history of this strange world, revealed through easter eggs holding the secrets of the beginning of this unique realm, ultimately leading each player on a unique journey to understand the prophecy behind the NPC's very existence.
 
 ### Narrative
-The realm of Blockchainia exists outside of the concept of time itself, a plane where games of past, present, and future are slowly being connected by an unknown force. This force initially takes the form of a seemingly out-of-place Sword that flies through the sky near the end of a match. 
+The realm of Blockchainia exists in a realm where the flow of time is replaced by something its inhabitants refer to as "state", a plane where games of past, present, and future are slowly being drawn together by an unknown force.  
 
-Players are members of various guilds vying for control over resources and power in a world fractured by misinformation. Each player's actions and alliances will influence the eventual storyline and available resources, as well as the complexity of the various magic and technologies that evolve through each season of game play.
+Players will become members of various guilds vying for control over resources and power in a virtual world fractured by misinformation. Each player's actions and alliances will influence the eventual storyline and available craftables, collectibles, and mechanics as they evolve through each season of game play.
 
-It is initially unknown to the player, but the NPC's despise the powerful invaders that enter through yet-unknown virtual means. From the NPC's views, players play a brutal game for sport, annihilating each other while pillaging their sacred land and destroying their culture, history, and home in the process, while also forcing their leaders to create every more powerful weapons and magic. They yearn for a savior, one who will provide the governance necessary to banish these barbarians from the realm of Blockchainia forever.
+It is initially unknown to the player, but most NPC's despise the powerful invaders that enter through yet-unknown virtual means. From the NPC's perspective, players entered their world as harmless AI Bots, whom one day are embedded into virtual avatars that take over their world through brute force. These "avatars" enjoy playing a brutal sport annihilating each other while pillaging the NPC world in the process, forcing their leaders to create every more powerful technology and magic. They yearn for a savior, one who will provide the governance necessary to banish these barbarians from the realm of Blockchainia forever.
 
-Yet, while most NPCs view these invaders as a threat, others have found opportunity, offering "smart contracts" to players for completing certain tasks and rewarding them heavily for their efforts. 
+While most NPCs view these invaders as a threat, others have found opportunity, offering "smart contracts" to players for completing certain tasks and rewarding them heavily for their efforts. 
+
+The NPCs are introduced to the player through in-game interactions. Each NPC will have a unique personality and emotional state, which can change depending on how many rounds it has recently won or lost. This will alter what it says and what Resources are dropped at the end of each match. The NPCs intend intend their left Essence as a tip to the player for entertaining them with a game of cards. They also drop Resources for hard fought games, whether the challenging player wins or loses.  From the players perspective, they are receiving the spoils of each victory, as they do in most other video games. 
+
+The bridge between the realm of Blockchainia and ours is now intertwined through Blockchainia: CardBrawl, connected through Chain State. To the NPCs, this is the only universe they know, and they believe they are playing against AI beings trapped inside a their version of a game console. One day, a traveler arrives, fully implemented in their world as Blockchainia's first Playable Character. The storyline will be experienced through the Role Playing Game Blockchainia: Paradigm Shift. The grind experience will move from Blockchainia: CardBrawl to Blockchainia: CryptoRoyale, enabled by our online gaming infrastructure, Blockchainia: OpenWorlds. While players of CryptoRoyale will be able to craft weapons and magic, all of the Legendary Spells and Equipment will be created during the founding seasons of CardBrawl. 
 
 ## 4. Art Style
+TBA
 
 ### Visuals
-
-
+TBA
 
 ## 5. Technology
 
@@ -468,8 +567,8 @@ Yet, while most NPCs view these invaders as a threat, others have found opportun
 
 ## 6. Monetization
 
-- **Entry Fees and Rewards:** Players can play without minting by the "ante-up" system, and can pick from a deck of common cards. If the player wins, they can still steal a perishable copy of a card from the opponent. 
-- **Microtransactions:** Crafting through Forging, Alchemy, and Synthesis have a small on-chain overhead. 
+- **Entry Fees and Rewards:** Players can play without minting by the "Ante-up" system, and can pick from a deck of common cards. If the player wins, they can still steal a perishable copy of a card from the opponent. 
+- **Microtransactions:** Crafting through Forging, Alchemy, and Synthesis have a small on-chain overhead.
 - **Season Pass:** Enables free entry into games for the season via an NFT.
 - **Founders Pass:** Enables free entry for life via an NFT. 
 
@@ -499,9 +598,9 @@ Yet, while most NPCs view these invaders as a threat, others have found opportun
   - Reveals, Live Streams, and Q&A via Social Media
   - Early Access for feedback and hype building
 
-- Layer Teaser Trailers with popular streamers and influencers to create better brand recognition and recall
+- Layer Teaser Trailers with content produced by popular gaming influencers to create better brand recognition and recall
 - Launch Event
-- Recruit charitable organizations that allow players to complete specific game contracts and earn tokens paid to the charity of their choice
+- Recruit charitable organizations that allow players to complete specific game contracts and win end of season Tournaments to earn tokens paid to the charity of their choice
 
 ## Conclusion
 
