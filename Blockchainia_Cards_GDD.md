@@ -505,4 +505,4 @@ Yet, while most NPCs view these invaders as a threat, others have found opportun
 
 ## Conclusion
 
-Blockchainia: Cards utilizes a collect, craft, compete loop to create a dynamic and strategic card game, offering players a wealth of options for customization and tactical decision-making.
+Blockchainia: CardBrawl utilizes a collect, craft, compete loop to create a dynamic and strategic card game, offering players a wealth of options for customization and tactical decision-making.
