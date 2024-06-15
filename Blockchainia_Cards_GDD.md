@@ -343,7 +343,7 @@ These items may be Forged to a card to add Perks to the card. These Perks activa
 | **Item**            | **Formula**           | **Description**                                                 |
 |---------------------|-----------------------|-----------------------------------------------------------------|
 | Steel Armor         | Iron + Leather        | Basic armor made from iron and leather.                         |
-| Steel Helmet        | Dwarven Steel + Mushroom      | A helmet made from durable steel.                               |
+| Steel Helmet        | Dwarven Steel + Leather      | A helmet made from durable steel.                               |
 | Leather Boots       | Leather + Oil      | Simple boots made from treated leather.                         |
 | Wooden Shield       | Darkwood + Iron       | A basic shield made from darkwood reinforced with iron.         |
 | Iron Gauntlets      | Iron + Leather        | Protective gauntlets made from iron and leather.                |
