@@ -260,6 +260,8 @@ Note: The Void type is derived from multiple essence subtypes, Light, Dark, Moon
 ## Resource list
 
 ### Ingredients
+Lore note: The most common materials, like Leather, are frequently dropped by NPCs when a player loses. 
+
 Some ingredients are unused in the first version of the Crafting implementation. This is intended to drive input from Early Access Users on future Formulas for Spells, Materials, and Equipment. 
 
 | **Ingredient**        | **Description**                                      |
@@ -299,29 +301,28 @@ Some ingredients are unused in the first version of the Crafting implementation.
 | Verdant               | Void-Nature spirit, grants nature-based magic     |
 
 ### Materials
-Lore note: Some materials, like Leather, are commonly dropped by NPCs when a player loses. 
 
 | **Material**          | **Description**                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------|
-| Leather               | Durable hides, heirlooms symbolizing ancestral resilience and victories.         |
-| Iron                  | A sturdy metal used for basic weaponry and armor.                                             |
+| Leather               | Durable hides, heirlooms symbolizing ancestral resilience and victories         |
+| Iron                  | A sturdy metal used for basic weaponry and armor                                              |
 | Adamantine            | A rare and nearly indestructible metal |
-| Obsidian              | A volcanic glass that can be sharpened to a razor edge, though brittle.     |
-| Dragonbone            | Bones from ancient dragons, incredibly strong and imbued with magical energy.                            |
-| Crystal               | Mystical crystals that can channel magical energies, used in crafting magical weapons.                   |
-| Darkwood              | A rare and sturdy wood with dark coloration.                          |
-| Orichalcum            | A mythical metal with a golden hue, known for its durability and enchantment capabilities.               |
-| Moonstone             | A pale, luminescent stone with magical properties, often used in crafting magical jewelry and weapons.   |
-| Dwarven Steel         | Superior steel forged by dwarven smiths, known for its exceptional quality and strength.                 |
-| Elven Silver          | A elegant metal used by elves, light and strong with magical properties.                        |
-| Froststeel            | Steel imbued with the essence of ice, causing weapons to have a chilling effect.                         |
-| Bloodstone            | A dark, crimson stone that can enhance the power of blood magic in weapons.                              |
-| Star Metal            | Metal forged from meteorite fragments, possessing unique otherworldly properties.                        |
-| Voidsteel             | A dark, shadowy metal that absorbs light, used in forging weapons with void or dark magic.               |
+| Obsidian              | A brittle volcanic glass that can be sharpened to a razor edge      |
+| Dragonbone            | Incredibly strong bones from ancient dragons imbued with magical energy                             |
+| Crystal               | Mystical crystals that can channel magical energies                   |
+| Darkwood              | A rare and sturdy wood with dark coloration                           |
+| Orichalcum            | A mythical metal with a golden hue, known for its durability and enchantment capabilities               |
+| Moonstone             | A pale, luminescent stone with magical properties   |
+| Dwarven Steel         | Superior steel known for its exceptional quality and strength                 |
+| Elven Silver          | A light and strong metal with magical properties                        |
+| Froststeel            | Steel imbued with the essence of ice                         |
+| Bloodstone            | A dark, crimson stone that can enhance the power of blood magic                              |
+| Star Metal            | Metal forged from meteorite fragments, possessing unique otherworldly properties                        |
+| Voidsteel             | A dark, shadowy metal that absorbs light              |
 | Living Wood           | Enchanted wood that retains the essence of life |
 | Thunderstone          | A rare stone that can store electrical energy |
 | Phoenix Feather       | Feathers from the mythical Phoenix |
-| Shadowglass           | A dark, reflective glass that can absorb and manipulate shadows |
+| Shadowglass           | A dark reflective glass that can absorb and manipulate shadows |
 
 ## Crafting through Synthesis and Alchemy to Create Legendary Weapons
 
