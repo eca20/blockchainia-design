@@ -262,7 +262,7 @@ Note: The Void type is derived from multiple essence subtypes, Light, Dark, Moon
 ### Ingredients
 Lore note: The most common materials, like Leather, are frequently dropped by NPCs when a player loses. 
 
-Some ingredients are unused in the first version of the Crafting implementation. This is intended to drive input from Early Access Users on future Formulas for Spells, Materials, and Equipment. 
+Strategy Note: Some ingredients are purposefully unused in the first version of the Crafting implementation. This is intended to drive engagement from Early Access Users on future Formulas for Spells, Materials, and Equipment. It is also inherent to the lore, storyline, and marketing strategy, as the Alchemists are aware of artifacts containing Symbols for Ingredients that they have no known Formulas for. They compete to rediscover these "Lost Spells". 
 
 | **Ingredient**        | **Description**                                      |
 |-----------------------|------------------------------------------------------|
