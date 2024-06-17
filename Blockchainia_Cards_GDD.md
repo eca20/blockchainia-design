@@ -540,10 +540,15 @@ Equipment and Spells can be used to increase a Cards statistics. Forging Weapons
 ## 3. Story and Setting
 
 ### World
-The game is set in a virtual on-chain realm where the separation of magic and technology has been obfuscated from the public by a shadowy organization. Ancient ruins and mines scatter the landscape, providing rich sources of elemental essence and raw materials. NPC characters inhabit the land, and have littered it with monuments, fountains, as well as various spiritual relics and artifacts revealing a deep but unspoken culture. Their interactions give clues to the history of this strange world, revealed through easter eggs holding the secrets of the beginning of this unique realm, ultimately leading each player on a unique journey to understand the prophecy behind the NPC's very existence.
+Blockchainia is a virtual on-chain realm where the separation of magic and technology has been obfuscated from the public by a shadowy organization. Ancient ruins and mines scatter the landscape, providing rich sources of elemental essence and raw materials. NPC characters inhabit the land, littered with monuments, fountains, as well as various spiritual relics left from their ancestors. Most of these relics reside in the hands of families belonging to the Noble class. Player interactions will reveal a deep, unspoken culture, as the lowest class NPC's in Blockchainia also love to play video games, not knowing they exist explicitly inside of one. Paying close attention to NPC interactions reveals clues to the history of this strange world, guiding the player towards easter eggs holding the secrets of the beginning of this unique realm, ultimately leading each player on a unique journey to understand the prophecy behind the NPC's very existence.
+
+Blockchainia's society resembles a world where war ceased to exist during the medieval period. Every since, the inhabitants have referred to their world as The Realm. The true history of these foundational moments in their history has been obfuscated from the NPC's minds. Various theories are being pushed amongst the Realm's Ministers, the name given to Blockchainia's scholar's and spiritual leaders. While swords and armor remain the most advanced lethal weapons, they are carried by Knights whom hold a mostly ceremonial status in society. However, entertainment technology was never hindered by the "forgotten events" of the past. Most recently, the release of the long awaited "Gamechainia 3", a console said to be connected to the fabric of the universe itself, has promised players eternal glory. The solution to Blockchainia's problems sets off a series of events that will change the face of the world forever: both theirs and ours. 
+
+Through forbidding the teaching of the true history, the institutional leaders of Blockchainia believe the have successfully staved off the NPC's natural inclination to wage war against one another via magic and weaponry. Only aware of a history beginning the Lost Events, the NPC's no longer believe in an individual ability to produce magic, they believe the only characters strong enough to wield magic are scholars and nobles, and have left the running of society to these elites. That is until the day a Player enters the Realm and befriends a special NPC, inspiring a belief in himself so strong that he conjures a magical spell, something unheard of in the modern age. Not fully understanding the risks, he spreads this newfound spiritual growth to the other NPCs, who shortly thereafter begin to slaughter each other in a massive civil war involving various factions, the most prominent being Red vs. Blue.
+
 
 ### Narrative
-The realm of Blockchainia exists in a realm where the flow of time is replaced by something its inhabitants refer to as "state", a plane where games of past, present, and future are slowly being drawn together by an unknown force.  
+Blockchainia exists in a realm where the flow of time is replaced by something its inhabitants refer to as "state", a plane where games of past, present, and future are slowly being drawn together by an unknown force.  
 
 Players will become members of various guilds vying for control over resources and power in a virtual world fractured by misinformation. Each player's actions and alliances will influence the eventual storyline and available craftables, collectibles, and mechanics as they evolve through each season of game play.
 
@@ -572,6 +577,9 @@ TBA
 - **Microtransactions:** Crafting through Forging, Alchemy, and Synthesis have a small on-chain overhead.
 - **Season Pass:** Enables free entry into games for the season via an NFT.
 - **Founders Pass:** Enables free entry for life via an NFT. 
+- **Staker's Pack:** $200 in Cards, comes with all 8 original Concept art pieces, plus a chance to win a print or the original copy. 
+- **Starter Pack:** $20 for 10 AI generated cards and one hand drawn concept art. Collect all 8 original Concept Art Pieces, collect a full deck, and upgrade a Card to Mythical in Season 1
+
 
 ## 7. Development and Marketing
 
@@ -602,6 +610,9 @@ TBA
 - Layer Teaser Trailers with content produced by popular gaming influencers to create better brand recognition and recall
 - Launch Event
 - Recruit charitable organizations that allow players to complete specific game contracts and win end of season Tournaments to earn tokens paid to the charity of their choice
+
+### Community Feedback
+- NPC interactions will allow users to submit feedback about the game as they converse with thier opponent, whom will sometimes pose a question to the player about the game they are playing. 
 
 ## Conclusion
 
