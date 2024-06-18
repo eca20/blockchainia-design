@@ -231,9 +231,9 @@ Each percentage is the chance, when minted, of each of the four Ranks falling in
 
 | Rank Range | Common | Uncommon| Rare | Epic | Legendary |
 |------------|--------|---------|------|------|-----------|
-| 0-2        | 40%    | 30%     | 20%  | 15%  | 10%       |
+| 0-2        | 40%    | 30%     | 20%  | 10%  | 10%       |
 | 3-5        | 35%    | 30%     | 35%  | 35%  | 30%       |
-| 6-8        | 25%    | 40%     | 35%  | 35%  | 35%       |
+| 6-8        | 25%    | 40%     | 35%  | 40%  | 35%       |
 | 9-A        | 0%     | 0%      | 10%  | 15%  | 25%       |
 
 ## Genetic Distribution
