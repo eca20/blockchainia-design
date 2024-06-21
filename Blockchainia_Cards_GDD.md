@@ -141,6 +141,28 @@ If the challenging card has a brawl class genetic of D (Defense), the power valu
 
 If the challenging card has a brawl class genetic of A (Ace), the strongest of all three values on this card challenges the weakest of all three values of the Resting card.
 
+#### Battle Statistics 
+Stat ranges are determined by right shifting the the binary representation of the hex value by three bits and randomly assigning a value for the additional three bits. The range for the hexadecimal values are shown below. 
+| Hexadecimal   | Range   |
+|:--------------|:--------|
+| 0             | 0-7     |
+| 1             | 8-15    |
+| 2             | 16-23   |
+| 3             | 24-31   |
+| 4             | 32-39   |
+| 5             | 40-47   |
+| 6             | 48-55   |
+| 7             | 56-63   |
+| 8             | 64-71   |
+| 9             | 72-79   |
+| A             | 80-87   |
+| B             | 88-95   |
+| C             | 96-103  |
+| D             | 104-111 |
+| E             | 112-119 |
+| F             | 120-127 |
+
+
 #### Brawl Mathematics
      Additional Card Attributes:
      
@@ -154,64 +176,60 @@ If the challenging card has a brawl class genetic of A (Ace), the strongest of a
      Power and Defense Values:
 
      The challenging card's power value is randomly chosen within its stat range.
-     The defending card's defense value is randomly chosen within its stat range, based on the battle class (physical or magical).
+     The defending card's defense value is randomly chosen within its stat range, based on the battle class of the Active card(physical or magical). 
+
      Example:
-     Card A: Power = 85 (stat 5 = range 80-95)
-     Card B: Defense = 23 (stat 2 = range 16-31)
+     Card A: Power = 41 (stat 5 = range 40-47, final Power: 41)
+     Card B: Defense = 21 (stat 2 = range 16-23, final Defense: 21)
      Elemental Advantage:
 
      If the challenging card's element has an advantage over the defending card's element, add a bonus to the challenging card's power.
-     Elemental relationships: Fire > Air > Earth > Water > Fire
      Example:
-     Card A (Fire) vs. Card B (Earth): Fire has an advantage over Earth.
-     Card A: Power = 85 + 10 (bonus) = 95
+     Card A (Earth) vs. Card B (Fire): Earth has an Strong effect on Earth.
+     Card A: Power = 41 + 10 (bonus) = 51
 
-     Phase 2: Perk Activation and Score Calculation
+     Phase 2: Score Calculation and Perk Activation 
+
+     Randomly select the actual attack and defense scores within the chosen power and defense values.
+     Example:
+     Card A: Attack score = Random(0, 51) = 51
+     Card B: Defense score = Random(0, 21) = 3
 
      Perk Activation:
 
      Each card can activate its weapon and armor [Perk] if a specific condition is met.
      Example Perks:
      "Weapon": Increase power by 20 if the random attack score is above 50.
-     "Armor": Reduce damage taken by 15 if the defense score is below 10.
+     "Armor": Increase magical defense by 10 and physical defense by 15 if defense score is below 25.
      Score Calculation:
 
-     Randomly select the actual attack and defense scores within the chosen power and defense values.
-     Example:
-     Card A: Attack score = Random(0, 95) = 71
-     Card B: Defense score = Random(0, 23) = 3
      Apply perks if conditions are met:
-     If Card A's [Perk] activates (since 71 > 50), new attack score = 71 + 20 = 91
-     If Card B's [Perk] activates (since 3 < 10), new defense score = 3 - 15 = -12 (minimum 0)
+     If Card A's [Perk] activates (since 51 > 50), new attack score = 51 + 20 = 71
+     If Card B's [Perk] activates (since 3 < 10), new defense score = 3 + 15 = 18 
      
      Phase 3: Final Score and Outcome Determination
+
+     Randomly select additional attack and defense scores within the chosen power and defense values.
+     Example:
+     Card A: Attack score = Random(0, 51) = 31
+     Card B: Defense score = Random(0, 21) = 10
 
      Score Adjustment:
 
      Subtract the scores from Phase 2 from the initial stat values in Phase 1.
      Example:
      Card A: 
-     95
-     −
-     91
-     =
-     4
-     95−91=4
+     71 − 31 = 40
      Card B: 
-     23
-     −
-     0
-     =
-     23
-     23−0=23
+     23 − 0 = 23
      Outcome Determination:
 
      Compare the final scores to determine the winner.
      The card with the highest difference wins the battle.
      Example:
-     Card A: 4
+     Card A: 40
      Card B: 23
-     Card B wins the battle.
+     Card A wins the battle.
 
      Final Scores: Final scores reflect the impact of skills and elemental bonuses, determining the battle outcome.
 
@@ -226,7 +244,7 @@ If the challenging card has a brawl class genetic of A (Ace), the strongest of a
   
 - **Customization:** Allow players to customize their decks of cards through crafting to suit their play style.
 
-## Rank Distribution
+## Rank Distribution for Season 1
 Each percentage is the chance, when minted, of each of the four Ranks falling into one of the ranges. 
 
 | Rank Range | Common | Uncommon| Rare | Epic | Legendary |
@@ -236,8 +254,8 @@ Each percentage is the chance, when minted, of each of the four Ranks falling in
 | 6-8        | 25%    | 40%     | 35%  | 40%  | 35%       |
 | 9-A        | 0%     | 0%      | 10%  | 15%  | 25%       |
 
-## Genetic Distribution
-When minted, there is a 1% chance of minting a card with an A Brawl class and 4% chance for a D Brawl Class. There is a 50% chance of minting an P Brawl Class, and 45% chance for an S Brawl Class. When changing rarity, the Card's genetics change to closer fit the following distribution: 
+## Genetic Distribution for Season 1
+When minted, there is a 1% chance of minting a card with an A Brawl class and 4% chance for a D Brawl Class. There is a 50% chance of minting an P Brawl Class, and 45% chance for an S Brawl Class. When changing rarity, the Card's genetics change to closer fit the following population distribution: 
 
 | Hex Range | Common | Uncommon | Rare | Epic | Legendary |
 |-----------|--------|----------|------|------|-----------|
@@ -247,7 +265,7 @@ When minted, there is a 1% chance of minting a card with an A Brawl class and 4%
 | C-F       | 5%     | 5%       | 5%   | 20%  | 35%       |
 
 ## Elemental Effectiveness Table
-Note: The Void type is derived from multiple essence subtypes, Light, Dark, Moon, and Nature. 
+Lore Note: The Void type is derived from subtypes: Light, Dark, Moon, and Nature. 
 
 | **Element \ Target** | Earth  | Water | Fire  | Wind  | Void    |
 |----------------------|--------|-------|-------|-------|---------|
