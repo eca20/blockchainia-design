@@ -34,7 +34,7 @@ When a player places a card adjacent to an opponents card in a ordinal direction
 Cards have different levels. Common level cards have low Face Values, like 1's and 2's and 3's, while Epic and Legendary level cards have 8's, 9's, and A's. Some cards are considered "Mythical". Mythical cards have unique perks derived from their Forged Weapon and Armor. 
 
 ### Game Setup
-1. **Face Values:** Each card has four numbers, one in each Cardinal Direction, representing its strength in that direction. Each number is referred to as a Rank, evaluated as a Value from one to ten, ten being represented by the letter 'A'.
+1. **Face Values:** Each card has four numbers, one in each Cardinal Direction, representing its strength in that direction. Each number is referred to as a Rank, evaluated as a Value from one to ten, ten being represented by the letter 'A'. A cards Ranks are permanent, set when the card is minted. 
 
 1. **Genetics:** Each card contains unique Genetics that derive it's initial Face Values, Brawl Arrows, Attributes, and Elemental compatibility. These genetics play a crucial role in the Brawl Mathematics through each Genetic attribute's value, such as setting the Card's Brawl Class and Power attribute. 
 
@@ -42,15 +42,39 @@ Cards have different levels. Common level cards have low Face Values, like 1's a
 
 1. **Card Ranks:** Cards have four Ranks which comprise it's Face Values, one in each Cardinal direction. 
 
+     **Rank Distribution for Season 1**
+     
+     Each percentage is the chance, when minted, of each of the four Ranks falling into one of the ranges. Ranks do not change during a rarity change. 
+     
+     | Rank Range | Common | Uncommon| Rare | Epic | Legendary |
+     |------------|--------|---------|------|------|-----------|
+     | 0-2        | 40%    | 30%     | 20%  | 10%  | 10%       |
+     | 3-5        | 35%    | 30%     | 35%  | 35%  | 30%       |
+     | 6-8        | 25%    | 40%     | 35%  | 40%  | 35%       |
+     | 9-A        | 0%     | 0%      | 10%  | 15%  | 25%       |
+
 1. **Brawl Arrows:** Each Card contains up to four arrows, one possible in each of the four ordinal directions. Cards may start a Card Brawl when one of the Brawl Arrows faces an adjacent opponents card. 
 
-1. **Forging:** A Card's Ranks are be altered via Forging Equipment and Magic to the card. It is not guaranteed that the ranks on a card will increase when Forging. However, some of a cards attributes may be increased by increasing the Level the card. 
+1. **Levelling and Forging:** A card can be leveled up to level 100 through gaining experience when used in game. As a card levels, it will change in rarity on a unique schedule set by its DNA. Epic cards may have one piece of equipment Forged to them. Legendary cards may have two pieces of equipment Forged to them. When forging, the genetics of a card change according to the table below. 
 
-1. **Card Levels:** As are used in Brawls, they earn experience towards its Level. Levels range from 1-100. As a card levels, its Brawl Class may change naturally or through evolution. While Leveling, a cards Power statistic will increase at certain levels. 
+     **Genetic Distribution for Season 1**
+
+     When minted, there is a 1% chance of minting a card with an A Brawl class and 4% chance for a D Brawl Class. There is a 50% chance of minting an P Brawl Class, and 45% chance for an S Brawl Class. While Leveling, a cards genetic attributes will change according to its Level Graph. When changing rarity, the Card's genetics change to closer fit the following population distribution: 
+
+     | Hex Range | Common | Uncommon | Rare | Epic | Legendary |
+     |-----------|--------|----------|------|------|-----------|
+     | 0-3       | 35%    | 25%      | 15%  | 12%  | 12%       |
+     | 4-7       | 45%    | 40%      | 40%  | 28%  | 18%       |
+     | 8-B       | 15%    | 30%      | 40%  | 50%  | 35%       |
+     | C-F       | 5%     | 5%       | 5%   | 20%  | 35%       |
+
+1. **Level Graph:** A Graph that shows genetic and rarity changes possible as a card progresses through various Levels.
+
+1. **Card Levels:** As are used in Brawls, they earn experience towards its Level. Levels range from 1-100. As a card levels, its Brawl Class may change . 
 
 1. **Deck Construction:** Players construct a deck of cards from cards they own, or may borrow up to 5 cards, Common through Rare, from a pool of cards made available for each game. The cost of borrowing cards is included in the "ante-up" fee. Players are unable to keep their borrowed cards, although their Opponent may Clone any of the captured borrowed Cards upon winning a match. 
 
-1. **Deck Limiting:** Players may only hold 10 instances of a Card for each unique monster, pet, character, or boss per Wallet. This total includes Cloned cards. If there is no room left in a player's wallet for a Cloned card, they must first burn one card of that instance in their deck to collect it. A Wallet Manager will allow the storing of multiple Wallets, akin to a "save file". Players are free to trade their cards to other Wallets through over-the-counter transactions.
+1. **Deck Limits:** Players may only hold 10 instances of a Card for each unique monster, pet, character, or boss per Wallet. This total includes Cloned cards. If there is no room left in a player's wallet for a Cloned card, they must first burn one card of that instance in their deck to collect it. A Wallet Manager will allow the storing of multiple Wallets, akin to a "save file". Players are free to trade their cards to other Wallets through over-the-counter transactions.
   
 1. **Game Board:** Blockchainia: Cards is played on a 4x4 grid board. Each square on the grid can hold one card. 
 
@@ -114,7 +138,7 @@ The last two values are used for the Resting card.
 
 #### Power genetic
 
-The first value on the card is the power attribute. This is the card's offensive value. The example card has a power attribute of 3, which means its actual value is a random number chosen between 48 - 63 HP.
+The first value on the card is the power attribute. This is the card's offensive value. How this value is used is described in the Battle Mathematics. 
 
 **Brawl Class genetic:**
 The second value on the card is the brawl class attribute. This value is not based on the hexadecimal scale like its other genetics, but instead is one of four classes. This genetic is represented by the letters P, S, D, and A. The card's brawl class determines how the values are assessed in card brawls.
@@ -164,10 +188,11 @@ Stat ranges are determined by right shifting the the binary representation of th
 
 
 #### Brawl Mathematics
-     Additional Card Attributes:
+     Relevent Card Attributes:
      
      Element: Each card has an elemental attribute (e.g., Fire, Water, Earth, Air, or Void). This is determined by its strongest elemental genetic, but also considers the card adeptness with each element. 
      Perk: Each card may have a special skill that can be activated under certain conditions.
+     Brawl Class: The Brawl Class of the Active card determines which defense stat of the Resting card is attacked during a brawl. In the following example, the Brawl Class of the Active card is Physical, and the Physical Defense stat is being attacked. 
 
      Battle Phases
 
@@ -183,17 +208,12 @@ Stat ranges are determined by right shifting the the binary representation of th
      Card B: Defense = 21 (stat 2 = range 16-23, final Defense: 21)
      Elemental Advantage:
 
-     If the challenging card's element has an advantage over the defending card's element, add a bonus to the challenging card's power.
+     If the challenging card's element has an advantage over the defending card's element, add a bonus to the challenging card's power. If the challenging card's element is weak to the defending cards element, reduce the challenging cards power. 
      Example:
-     Card A (Earth) vs. Card B (Fire): Earth has an Strong effect on Earth.
+     Card A (Earth) vs. Card B (Fire): Earth has an "Strong" effect on Fire.
      Card A: Power = 41 + 10 (bonus) = 51
 
-     Phase 2: Score Calculation and Perk Activation 
-
-     Randomly select the actual attack and defense scores within the chosen power and defense values.
-     Example:
-     Card A: Attack score = Random(0, 51) = 51
-     Card B: Defense score = Random(0, 21) = 3
+     Phase 2: Perk Activation 
 
      Perk Activation:
 
@@ -209,10 +229,10 @@ Stat ranges are determined by right shifting the the binary representation of th
      
      Phase 3: Final Score and Outcome Determination
 
-     Randomly select additional attack and defense scores within the chosen power and defense values.
+     Randomly select additional attack and defense scores within the Phase 2 power and defense values.
      Example:
-     Card A: Attack score = Random(0, 51) = 31
-     Card B: Defense score = Random(0, 21) = 10
+     Card A: Attack score = Random(0, 71) = 31
+     Card B: Defense score = Random(0, 18) = 10
 
      Score Adjustment:
 
@@ -243,26 +263,6 @@ Stat ranges are determined by right shifting the the binary representation of th
 - **Variety:** Include a wide range of cards to encourage diverse strategies. Each card contains a wide range of attributes that make it unique. 
   
 - **Customization:** Allow players to customize their decks of cards through crafting to suit their play style.
-
-## Rank Distribution for Season 1
-Each percentage is the chance, when minted, of each of the four Ranks falling into one of the ranges. 
-
-| Rank Range | Common | Uncommon| Rare | Epic | Legendary |
-|------------|--------|---------|------|------|-----------|
-| 0-2        | 40%    | 30%     | 20%  | 10%  | 10%       |
-| 3-5        | 35%    | 30%     | 35%  | 35%  | 30%       |
-| 6-8        | 25%    | 40%     | 35%  | 40%  | 35%       |
-| 9-A        | 0%     | 0%      | 10%  | 15%  | 25%       |
-
-## Genetic Distribution for Season 1
-When minted, there is a 1% chance of minting a card with an A Brawl class and 4% chance for a D Brawl Class. There is a 50% chance of minting an P Brawl Class, and 45% chance for an S Brawl Class. When changing rarity, the Card's genetics change to closer fit the following population distribution: 
-
-| Hex Range | Common | Uncommon | Rare | Epic | Legendary |
-|-----------|--------|----------|------|------|-----------|
-| 0-3       | 35%    | 25%      | 15%  | 12%  | 12%        |
-| 4-7       | 45%    | 40%      | 40%  | 28%  | 18%       |
-| 8-B       | 15%    | 30%      | 40%  | 50%  | 35%       |
-| C-F       | 5%     | 5%       | 5%   | 20%  | 35%       |
 
 ## Elemental Effectiveness Table
 Lore Note: The Void type is derived from subtypes: Light, Dark, Moon, and Nature. 
