@@ -188,7 +188,7 @@ Stat ranges are determined by right shifting the the binary representation of th
 
 
 #### Brawl Mathematics
-     Relevent Card Attributes:
+     Relevant Card Attributes:
      
      Element: Each card has an elemental attribute (e.g., Fire, Water, Earth, Air, or Void). This is determined by its strongest elemental genetic, but also considers the card adeptness with each element. 
      Perk: Each card may have a special skill that can be activated under certain conditions.
@@ -256,7 +256,7 @@ Stat ranges are determined by right shifting the the binary representation of th
 ## Design Considerations
 - **Strategic Placement:** Players must consider directional coverage for card placement on multiple fronts, equipped items, and elemental effects.
   
-- **Balance:** Ensure cards contain a balance of Face Values in each direction. With a breadth of considerations needed to create the optimal deck for success, finding the proper balance to work up the leaderboard and receive a tournament invite.
+- **Balance:** Ensure cards contain a balance of Face Values in each direction. With a breadth of considerations needed to create the optimal deck for success, finding the proper balance to work up the Leaderboard and receive a tournament invite.
 
 - **Seasonal Tournaments:** At the end of each season, the top 64 players of the Leaderboard will be invited to play through a Tournament Bracket. 
   
@@ -596,7 +596,7 @@ TBA
 - **Season Pass:** Enables free entry into games for the season via an NFT.
 - **Founders Pass:** Enables free entry for life via an NFT. 
 - **Staker's Pack:** $200 in Cards, comes with all 8 original Concept art pieces, plus a chance to win a print or the original copy. 
-- **Starter Pack:** $20 for 10 AI generated cards and one hand drawn concept art. Collect all 8 original Concept Art Pieces, collect a full deck, and upgrade a Card to Mythical in Season 1
+- **Starter Pack:** $20 for 6 AI generated cards and one hand drawn concept art. Collect all 8 original Concept Art Pieces, collect a full deck, and upgrade a Card to Mythical in Season 1
 
 
 ## 7. Development and Marketing
