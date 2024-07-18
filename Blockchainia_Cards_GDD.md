@@ -6,9 +6,8 @@
 Blockchainia: CardBrawl
 
 ### Concept
-Blockchainia: CardBrawl is a fully on chain game in which Cards are minted for a complex Collect, Craft, and Compete Card game. Each card features a different Monster, Boss, NPC or Playable Character from the Blockchainia Lore. Blockchainia: CardBrawl is a mini-game to our wider gaming ecosystem. The game mixes and adapts from the mechanics of many well known games, from simple capturing based on value (Dominoes, Triple Triad, Final Fantasy 8), to complex battles (Magic the Gathering, Tetra Master, Final Fantasy 9). We implement a combination of Rank (Face Values), Genetics, Battle Arrows, and Battle Classes to create a strategic hybrid-deterministic battle system. CardBrawl players compete with their genetically unique Cards to collect Resources and earn Experience. Resources allow players to alter their Card's attributes, as well as Forge new Equipment to each card. Experience allows players to level their cards, potentially increasing certain attributes along the way. Legendary and Mythical Weapons and Armor will grant specific Perks in the battle mathematics.
-
-Players can invest an entry fee, or "Ante-up", to join matches against NPCs of varying difficulty or their friends. The Ante-up system will allow players to play without needing to have minted cards ahead of time. The winner is allowed to "Clone" one perishable copy of a card they have captured from their opponents hand. This Clone will be automatically burned after the completion of the first match it participates in. The game's returns are the following Resources: Ingredients, Materials, and magical Essence, which must be obtained through playing AI NPCs. Crafting together Formulas of these Resources results in more powerful equipment and spells which can be Forged to cards to increase its "Face Values" and genetic attributes.  
+Blockchainia: CardBrawl is a fully on chain game in which Cards are minted for a complex Collect, Craft, and Compete Card game. Each card features a different Monster, Boss, NPC or Playable Character from the Blockchainia Lore. Blockchainia: CardBrawl is a mini-game to our wider gaming ecosystem. The game mixes and adapts from the mechanics of many well known games, from simple capturing based on value (Dominoes, Triple Triad, Final Fantasy 8), to complex battles (Magic the Gathering, Tetra Master, Final Fantasy 9). We implement a combination of Rank, Genetics, Battle Arrows, and Battle Classes to create a strategic hybrid-deterministic battle system. CardBrawl players compete with their genetically unique Cards to collect Resources and earn Experience. Resources allow players to alter their Card's attributes, as well as Forge new Equipment to each card. Experience allows players to level their cards, potentially increasing certain attributes along the way. Legendary and Mythical Weapons and Armor will grant specific Perks in the battle mathematics.
+The winner of each match may "Clone" one perishable copy of a card they have captured from their opponents hand. This Clone will be automatically burned after the completion of the first match it participates in. The game's returns are the following Resources: Ingredients, Materials, and Essence, which must be obtained through winning matches. Crafting together Formulas of these Resources results in more powerful equipment and spells which can be Forged to cards to increase its "Face Values" and genetic attributes.  
 
 ### Platform
 PC/Mobile
@@ -19,7 +18,7 @@ Card Game
 ## 2. Gameplay
 
 ### Game Overview
-Blockchainia: CardBrawl combines resource collection and crafting with a complex battle system. Players compete against AI NPCs to mine Resources to enhance their genetically unique cards, driving players to level up to enable higher stakes games. Players Ante-up a small fee to play against AI NPCs who drop valuable Resources upon losing. These resources are needed to engage with the crafting system. Cards can be acquired through minting Card Packs, while Resources in the form of Ingredients, Materials, and Essence must be won through playing Card games through the Ante-up system. 
+EterraCards combines resource collection and crafting with a complex battle system. Players compete against AI NPCs to mine Resources to enhance their genetically unique cards, driving players to level up to enable higher stakes games. Players Ante-up a small fee to play against AI NPCs who drop valuable Resources upon losing. These resources are needed to engage with the crafting system. Cards can be acquired through minting Card Packs, while Resources in the form of Ingredients, Materials, and Essence must be won through playing Card games through the Ante-up system. 
 
 CardBrawl is played on a four-by-four (4x4) four grid of blank squares where cards will be placed as the game progresses. At the start of each game, up to six squares may be blocked from play, referred to as Grid Lock. Each card has four numbers, one in each Cardinal Direction, referred to as "Face Values". Each individual number is referred to as a Rank, representing its strength in that direction. These numbers range from one to ten, ten being represented by the letter 'A'. Cards can have elemental alignments that affect the game play if there are elemental icons on the game board. 
 
@@ -566,7 +565,7 @@ Through forbidding the teaching of the true history, the institutional leaders o
 
 
 ### Narrative
-Blockchainia exists in a realm where the flow of time is replaced by something its inhabitants refer to as "state", a plane where games of past, present, and future are slowly being drawn together by an unknown force.  
+Blockchainia exists in a realm where the flow of time is replaced by something its inhabitants refer to as "state", a plane where games of past, present, and future are slowly and unknowingly being drawn together by an unknown force.  
 
 Players will become members of various guilds vying for control over resources and power in a virtual world fractured by misinformation. Each player's actions and alliances will influence the eventual storyline and available craftables, collectibles, and mechanics as they evolve through each season of game play.
 
@@ -634,4 +633,4 @@ TBA
 
 ## Conclusion
 
-Blockchainia: CardBrawl utilizes a collect, craft, compete loop to create a dynamic and strategic card game, offering players a wealth of options for customization and tactical decision-making.
+Blockchainia: CardBrawl utilizes a collect, craft, compete loop to create a strategic and dynamic card game, offering players a wealth of options for customization and tactical decision-making.
